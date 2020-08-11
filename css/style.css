@@ -28,10 +28,6 @@ h1 {
   font-family: Lato-Bold, sans-serif;
 }
 
-p {
-  font-weight: 600;
-}
-
 .active {
   font-family: Lato-Bold, sans-serif;
   -webkit-box-shadow: 0 4px 0 #800080;
@@ -173,6 +169,7 @@ p {
   border: 0;
   font-size: 25px;
   cursor: pointer;
+  font-family: Lato-Light, sans-serif;
 }
 
 .main-screen__button button:hover {
