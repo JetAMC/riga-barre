@@ -1,0 +1,259 @@
+$mainColor: #800080;
+
+@mixin flexCenter ($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Lato-Light, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Lato-Bold, sans-serif;
+}
+
+p {
+    font-weight: 600;
+}
+
+.active {
+    font-family: Lato-Bold, sans-serif;
+    box-shadow: 0 4px 0 $mainColor;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    // padding: 20px;
+    padding: 20px 0;
+    margin: 0 auto;
+    // border: 1px solid #fff;
+    // border: 1px solid #000;
+}
+
+/*************************************** HEADER ***/
+.header {
+    background: #0A0B0E;
+    color: #fff;
+    width: 100%;
+    // .container {
+    //     padding: 20px 0;
+    // }
+}
+
+.header__materials { 
+    @include flexCenter(center, space-between);
+}
+
+.header__logo img {
+    width: 200px;
+}
+
+.header__menu {
+    @include flexCenter(center, center);
+    div {
+        margin-left: 20px;
+    }
+    p {
+        &:hover {
+            box-shadow: 0 4px 0 $mainColor;
+        }
+    }
+}
+
+.header__contacts {
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            box-shadow: 0 4px 0 $mainColor;
+        }
+    }
+    p {
+        @include flexCenter(center, center);
+    }
+    i {
+        font-size: 25px;
+        margin-right: 7px;
+    }
+}
+
+.header__language {
+    @include flexCenter(center, center);
+    p {
+        margin-left: 15px;
+    }
+}
+
+/*************************************** MAIN-SCREEN ***/
+.main-screen {
+    height: 1000px;
+    background: url('../images/main-bg.jpg') no-repeat bottom;
+    background-size: cover;
+    color: #fff;
+    .container {
+        @include flexCenter(center, center);
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+
+.main-screen__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-screen__button button {
+    background: $mainColor;
+    border-radius: 40px;
+    padding: 20px 30px;
+    color: #fff;
+    border: 0;
+    font-size: 25px;
+    cursor: pointer;
+    &:hover {
+        background: lighten($mainColor, 7%);
+    }
+}
+
+/*************************************** SERVICES ***/
+.services {
+    // border: 1px solid #000;
+}
+
+.services__title {
+    @include flexCenter(center, center);
+    font-family: Lato-Bold, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services__main-card {
+    // margin-top: -20px;
+    // height: 600px;
+    // border: 3px solid $mainColor;
+    @include flexCenter(flex-start, space-around);
+    .title {
+        font-family: Lato-Bold, sans-serif;
+        font-size: 25px;
+        display: inline-block;
+    }
+    .card {
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    span {
+        font-family: Lato-Bold, sans-serif;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    a {
+        font-family: Lato-Bold, sans-serif;
+        font-size: 20px;
+        margin-top: 20px;
+        display: inline-block;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+.services__barre-image, .services__stretching-image, .services__face-image {
+    max-width: 390px;
+    width: 100%;
+    height: 390px;
+}
+
+.services__barre-image {
+    background: url('../images/barre.png') no-repeat center;
+    background-size: cover;
+}
+
+.services__stretching-image {
+    background: url('../images/stretching.png') no-repeat center;
+    background-size: cover;
+}
+
+.services__face-image {
+    background: url('../images/face-fitness.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.services__barre-text, .services__stretching-text, .services__face-text {
+    background: $mainColor;
+    color: #fff;
+    max-width: 390px;
+    width: 100%;
+    padding: 20px;
+}
+
+/*************************************** CTA ***/
+.cta {
+    background: $mainColor;
+    height: 500px;
+    color: #fff;
+}
+
+.cta__title {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 32px;
+}
+
+/*************************************** TEAM ***/
+.team__title {
+    @include flexCenter(center, center);
+    font-family: Lato-Bold, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*************************************** BUTTON TOP ***/
+#buttonTop {
+    text-align: center;
+    display: none;
+    position: fixed;
+    padding-top: 12px;
+    bottom: 55px;
+    right: 16px;
+    z-index: 999;
+    background: #0A0B0E;
+    color: #fff;
+    height: 48px;
+    width: 48px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
