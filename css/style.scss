@@ -1,4 +1,5 @@
 $mainColor: #800080;
+$darkColor: #403c4a;
 
 @mixin flexCenter ($align, $justify) {
     display: flex;
@@ -47,8 +48,7 @@ p {
 .container {
     max-width: 1180px;
     width: 100%;
-    // padding: 20px;
-    padding: 20px 0;
+    padding: 70px 0;
     margin: 0 auto;
     // border: 1px solid #fff;
     // border: 1px solid #000;
@@ -59,9 +59,9 @@ p {
     background: #060709;
     color: #fff;
     width: 100%;
-    // .container {
-    //     padding: 20px 0;
-    // }
+    .container {
+        padding: 20px 0;
+    }
 }
 
 .header__materials { 
@@ -117,6 +117,7 @@ p {
     .container {
         @include flexCenter(center, center);
         flex-direction: column;
+        padding: 20px 0;
     }
     h1 {
         margin-bottom: 10px;
@@ -151,7 +152,7 @@ p {
     @include flexCenter(center, center);
     font-family: Lato-Bold, sans-serif;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .services__main-card {
@@ -252,21 +253,16 @@ p {
 }
 
 /*************************************** BENEFITS ***/
-.benefits {
-    .container {
-        padding-top: 70px;
-        padding-bottom: 70px;
-    }
-}
 .benefits__title {
-    @include flexCenter(center, center);
-    flex-direction: column;
+    // @include flexCenter(center, center);
+    // flex-direction: column;
+    text-align: center;
     font-family: Lato-Bold, sans-serif;
     font-size: 32px;
     margin-bottom: 50px;
-    span {
-        margin-bottom: 10px;
-    }
+    // span {
+    //     margin-bottom: 10px;
+    // }
     // .benefits__line {
     //     border: 2px solid $mainColor;
     //     width: 150px;
@@ -345,8 +341,19 @@ p {
 //     line-height: 45px;
 // }
 
+/*************************************** GALLERY ***/
+.gallery {
+    background: $darkColor;
+    height: 700px;
+}
 
-
+.gallery__title {
+    text-align: center;
+    font-family: Lato-Bold, sans-serif;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #fff;
+}
 /*************************************** BUTTON TOP ***/
 #buttonTop {
     text-align: center;

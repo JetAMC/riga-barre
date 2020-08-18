@@ -37,7 +37,7 @@ h1 {
 .container {
   max-width: 1180px;
   width: 100%;
-  padding: 20px 0;
+  padding: 70px 0;
   margin: 0 auto;
 }
 
@@ -46,6 +46,10 @@ h1 {
   background: #060709;
   color: #fff;
   width: 100%;
+}
+
+.header .container {
+  padding: 20px 0;
 }
 
 .header__materials {
@@ -150,6 +154,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20px 0;
 }
 
 .main-screen h1 {
@@ -189,7 +194,7 @@ h1 {
           justify-content: center;
   font-family: Lato-Bold, sans-serif;
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .services__main-card {
@@ -311,32 +316,11 @@ h1 {
 }
 
 /*************************************** BENEFITS ***/
-.benefits .container {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
 .benefits__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
   font-family: Lato-Bold, sans-serif;
   font-size: 32px;
   margin-bottom: 50px;
-}
-
-.benefits__title span {
-  margin-bottom: 10px;
 }
 
 .benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
@@ -407,6 +391,20 @@ h1 {
   background: url("../images/pexels-lina-kivaka-1741242.jpg") no-repeat center;
   background-size: cover;
   border-radius: 0 3px 3px 0;
+}
+
+/*************************************** GALLERY ***/
+.gallery {
+  background: #403c4a;
+  height: 700px;
+}
+
+.gallery__title {
+  text-align: center;
+  font-family: Lato-Bold, sans-serif;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #fff;
 }
 
 /*************************************** BUTTON TOP ***/
