@@ -43,7 +43,7 @@ h1 {
 
 /*************************************** HEADER ***/
 .header {
-  background: #0A0B0E;
+  background: #060709;
   color: #fff;
   width: 100%;
 }
@@ -269,7 +269,7 @@ h1 {
 
 /*************************************** CTA ***/
 .cta {
-  background: #800080;
+  background: #403c4a;
   height: 500px;
   color: #fff;
 }
@@ -277,6 +277,21 @@ h1 {
 .cta__title {
   font-family: Lato-Bold, sans-serif;
   font-size: 32px;
+}
+
+.cta__button button {
+  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+  border: 0;
+  border-radius: 3px;
+  padding: 0 28px;
+  width: 300px;
+  height: 45px;
+  font-size: 22px;
+  background: #800080;
+  color: #fff;
+  font-family: Lato-Bold, sans-serif;
+  cursor: pointer;
 }
 
 /*************************************** TEAM ***/
@@ -295,6 +310,105 @@ h1 {
   margin-bottom: 20px;
 }
 
+/*************************************** BENEFITS ***/
+.benefits .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.benefits__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Lato-Bold, sans-serif;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.benefits__title span {
+  margin-bottom: 10px;
+}
+
+.benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
+  background: #403c4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 9px 20px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 20px rgba(31, 29, 38, 0.8);
+  margin-bottom: 40px;
+}
+
+.benefits__first-text, .benefits__second-text, .benefits__third-text, .benefits__fourth-text {
+  color: #fff;
+  padding: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.benefits__first-text span, .benefits__second-text span, .benefits__third-text span, .benefits__fourth-text span {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.benefits__first-text i, .benefits__second-text i, .benefits__third-text i, .benefits__fourth-text i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.benefits__first-image, .benefits__second-image, .benefits__third-image, .benefits__fourth-image {
+  max-width: 1000px;
+  width: 100%;
+  height: 450px;
+}
+
+.benefits__first-image {
+  background: url("../images/TOTAL-BARRE-1080x675.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 3px 0 0 3px;
+}
+
+.benefits__second-image {
+  background: url("../images/pexels-polina-tankilevitch-3735471.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 0 3px 3px 0;
+}
+
+.benefits__third-image {
+  background: url("../images/pexels-elly-fairytale-3823039.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 3px 0 0 3px;
+}
+
+.benefits__fourth-image {
+  background: url("../images/pexels-lina-kivaka-1741242.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 0 3px 3px 0;
+}
+
 /*************************************** BUTTON TOP ***/
 #buttonTop {
   text-align: center;
@@ -304,7 +418,7 @@ h1 {
   bottom: 55px;
   right: 16px;
   z-index: 999;
-  background: #0A0B0E;
+  background: #060709;
   color: #fff;
   height: 48px;
   width: 48px;
