@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simple-lightbox.css">
     <script src="https://kit.fontawesome.com/b60c7bcec8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/theme.js"></script>
-    <script src="js/gallery.js"></script>
+    <script src="js/simple-lightbox.js"></script>
 </head>
 <body>
     <div class="header">
@@ -48,7 +49,7 @@
                 <h2>Усовершенствуйте красоту тела, развивайте гибкость и пластичность!</h2>
             </div>
             <div class="main-screen__button">
-                <button>Записаться на пробное занятие</button>
+                <button class="primary-button">Записаться на пробное занятие</button>
             </div>
         </div>
     </div>
@@ -123,7 +124,7 @@
                 </p>
             </div>
             <div class="cta__button">
-                <button>Записаться на занятие</button>
+                <button class="primary-button">Записаться на занятие</button>
             </div>
         </div>
     </div>
@@ -178,9 +179,9 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="benefits__button">
-                <button>Записаться на занятие</button>
-            </div> -->
+            <div class="benefits__button">
+                <button class="primary-button">Записаться на занятие</button>
+            </div>
         </div>
     </div>
     <div class="gallery">
@@ -188,8 +189,24 @@
             <div class="gallery__title">
                 <span>Галерея</span>
             </div>
+            <div class="gallery__area">
+                <a href="images/gallery/image1.jpg"><img src="images/gallery/thumbs/thumb1.jpg" alt="" /></a>
+                <a href="images/gallery/image2.jpg"><img src="images/gallery/thumbs/thumb2.jpg" alt="" /></a>
+                <a href="images/gallery/image3.jpg"><img src="images/gallery/thumbs/thumb3.jpg" alt="" /></a>
+                <a href="images/gallery/image4.jpg"><img src="images/gallery/thumbs/thumb4.jpg" alt="" /></a>
+                <a href="images/gallery/image5.jpg"><img src="images/gallery/thumbs/thumb5.jpg" alt="" /></a>
+                <a href="images/gallery/image6.jpg"><img src="images/gallery/thumbs/thumb6.jpg" alt="" /></a>
+            </div>
         </div>
     </div>
     <a href="#" id="buttonTop"><i class="fas fa-arrow-up"></i></a>
+
+<script>
+    var bigGallery = new SimpleLightbox('.gallery__area a', {
+        showCounter: false,
+        captions: false
+    });
+</script>
+
 </body>
 </html>
