@@ -189,26 +189,6 @@ h1 {
 }
 
 /*************************************** SERVICES ***/
-.services__figure {
-  background: #800080;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  color: #fff;
-  font-family: Lato-Bold, sans-serif;
-}
-
 .services__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,8 +200,8 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Lato-Bold, sans-serif;
-  font-size: 32px;
   margin-bottom: 50px;
+  font-size: 32px;
 }
 
 .services__main-card {
@@ -237,18 +217,17 @@ h1 {
 
 .services__main-card .title {
   font-family: Lato-Bold, sans-serif;
-  font-size: 25px;
+  font-size: 28px;
   display: inline-block;
 }
 
 .services__main-card span {
   font-family: Lato-Bold, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .services__main-card p {
-  margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .services__main-card a {
@@ -264,16 +243,36 @@ h1 {
 }
 
 .services__main-card ul {
-  list-style-type: none;
+  list-style-type: square;
 }
 
 .services__main-card ul li {
   margin-bottom: 10px;
 }
 
-.services__barre-card, .services__stretching-card {
-  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
-          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+.services__line {
+  border-top: 4px solid #800080;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.services__barre-square {
+  width: 80px;
+  height: 80px;
+  background-color: #800080;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: -30px;
+}
+
+.services__stretching-square {
+  width: 100px;
+  height: 150px;
+  border: 4px solid #800080;
+  position: absolute;
+  margin-top: 330px;
+  margin-left: 450px;
+  z-index: 1;
 }
 
 .services__barre-image, .services__stretching-image {
@@ -281,6 +280,10 @@ h1 {
   width: 100%;
   height: 450px;
   position: relative;
+  margin-bottom: 40px;
+  z-index: 2;
+  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
 }
 
 .services__barre-image {
@@ -289,16 +292,31 @@ h1 {
 }
 
 .services__stretching-image {
-  background: url("../images/stretching.png") no-repeat center;
+  background: url("../images/stretching-img.jpg") no-repeat center;
   background-size: cover;
 }
 
 .services__barre-text, .services__stretching-text {
-  background: #403c4a;
-  color: #fff;
+  color: #333;
   max-width: 520px;
   width: 100%;
-  padding: 20px 10px;
+  text-align: center;
+}
+
+.services__stretching-title, .services__barre-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*************************************** CTA ***/
@@ -403,11 +421,6 @@ h1 {
 
 .benefits__title span {
   margin-bottom: 10px;
-}
-
-.benefits__title .benefits__line {
-  border-top: 4px solid #800080;
-  width: 130px;
 }
 
 .benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
@@ -531,6 +544,64 @@ h1 {
 
 .gallery__area img {
   width: 33%;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  /* Animation */
+}
+
+.gallery__area img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+}
+
+.gallery__square {
+  width: 80px;
+  height: 150px;
+  border: 4px solid #800080;
+  position: absolute;
+  z-index: 1;
+  margin-top: -30px;
+  margin-left: -20px;
+}
+
+.gallery__next-line {
+  margin-top: -5px;
+}
+
+/*************************************** FACTS ***/
+.facts {
+  background: #800080;
+}
+
+.facts__title {
+  text-align: center;
+  font-family: Lato-Bold, sans-serif;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.facts__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.facts__all i {
+  font-size: 50px;
+}
+
+.facts__location-image, .facts__health-image {
+  margin-bottom: 20px;
 }
 
 /*************************************** BUTTON TOP ***/
