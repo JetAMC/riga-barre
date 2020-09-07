@@ -22,6 +22,7 @@ html {
 body {
   font-family: Lato-Light, sans-serif;
   font-size: 20px;
+  min-width: 320px;
 }
 
 h1 {
@@ -213,6 +214,8 @@ h1 {
           align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .services__main-card .title {
@@ -364,6 +367,114 @@ h1 {
   position: absolute;
 }
 
+/*************************************** OUR TEAM ***/
+.our-team {
+  background: #fff;
+}
+
+.our-team__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Lato-Bold, sans-serif;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.our-team__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our-team__all img {
+  max-width: 500px;
+  width: 100%;
+  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+}
+
+.our-team__line {
+  border-top: 4px solid #800080;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.our-team__image {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.our-team__first, .our-team__second {
+  max-width: 500px;
+  width: 100%;
+}
+
+.our-team__info {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our-team__info div {
+  margin-bottom: 15px;
+}
+
+.our-team__info span {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 28px;
+  display: block;
+}
+
+.our-team__info i {
+  color: #800080;
+  font-size: 50px;
+}
+
+.our-team__square {
+  width: 80px;
+  height: 150px;
+  border: 4px solid #800080;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.our-team__second-square {
+  width: 100px;
+  height: 120px;
+  background: #800080;
+  position: absolute;
+  margin-left: 430px;
+  margin-top: 410px;
+}
+
 /*************************************** TEAM ***/
 .team {
   background: url("../images/pexels-andrea-piacquadio-868757.jpg") no-repeat center;
@@ -399,6 +510,10 @@ h1 {
 }
 
 /*************************************** BENEFITS ***/
+.benefits {
+  background: url("../images/content_bg.png");
+}
+
 .benefits__title {
   text-align: center;
   font-family: Lato-Bold, sans-serif;
@@ -443,22 +558,22 @@ h1 {
 }
 
 .benefits__first {
-  background: url("../images/TOTAL-BARRE-1080x675.jpg") no-repeat left;
+  background: url("../images/benefits-first.jpg") no-repeat top left;
   background-size: 70%;
 }
 
 .benefits__second {
-  background: url("../images/pexels-polina-tankilevitch-3735471.jpg") no-repeat right;
+  background: url("../images/benefits-second.jpg") no-repeat right;
   background-size: 70%;
 }
 
 .benefits__third {
-  background: url("../images/pexels-elly-fairytale-3823039.jpg") no-repeat left;
+  background: url("../images/benefits-third.jpg") no-repeat left;
   background-size: 70%;
 }
 
 .benefits__fourth {
-  background: url("../images/pexels-lina-kivaka-1741242.jpg") no-repeat right;
+  background: url("../images/benefits-fourth.jpg") no-repeat bottom right;
   background-size: 70%;
 }
 
@@ -531,7 +646,7 @@ h1 {
 
 /*************************************** GALLERY ***/
 .gallery {
-  background: #fff;
+  background: url("../images/content_bg.png");
 }
 
 .gallery__title {
@@ -544,10 +659,10 @@ h1 {
 
 .gallery__area img {
   width: 33%;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
   /* Animation */
 }
 
@@ -572,9 +687,15 @@ h1 {
   margin-top: -5px;
 }
 
+/*************************************** FOOTER ***/
+.footer {
+  background: #403c4a;
+  height: 400px;
+}
+
 /*************************************** FACTS ***/
 .facts {
-  background: #800080;
+  background: url("../images/content_bg.png");
 }
 
 .facts__title {
@@ -582,22 +703,33 @@ h1 {
   font-family: Lato-Bold, sans-serif;
   font-size: 32px;
   margin-bottom: 50px;
-  color: #fff;
+  color: #333;
 }
 
 .facts__all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #333;
+  text-align: center;
 }
 
 .facts__all i {
   font-size: 50px;
+}
+
+.facts__health, .facts__location {
+  width: 33%;
+}
+
+.facts__health img, .facts__location img {
+  width: 80%;
 }
 
 .facts__location-image, .facts__health-image {
