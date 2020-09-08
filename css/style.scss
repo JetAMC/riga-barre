@@ -372,15 +372,15 @@ p {
     margin-top: 410px;
 }
 
-/*************************************** TEAM ***/
-.team {
+/*************************************** SCHEDULE ***/
+.schedule {
     background: url('../images/pexels-andrea-piacquadio-868757.jpg') no-repeat center;
     background-size: cover;
     height: 530px;
     position: relative;
 }
 
-.team__figure {
+.schedule__figure {
     clip-path: polygon(6% 100%, 85% 100%, 85% 100%, 20% 25%);
     background: $mainColor;
     position: absolute;
@@ -390,7 +390,7 @@ p {
     left: 0;
 }
 
-.team__title {
+.schedule__title {
     @include flexCenter(center, center);
     font-family: Lato-Bold, sans-serif;
     font-size: 32px;
@@ -545,40 +545,6 @@ p {
     background: $darkColor;
     height: 400px;
 }
-
-/*************************************** FACTS ***/
-.facts {
-    background: url('../images/content_bg.png');
-}
-.facts__title {
-    text-align: center;
-    font-family: Lato-Bold, sans-serif;
-    font-size: 32px;
-    margin-bottom: 50px;
-    color: #333;
-}
-
-.facts__all {
-    @include flexCenter(center, center);
-    color: #333;
-    text-align: center;
-    i {
-        font-size: 50px;
-    }
-}
-
-.facts__health, .facts__location {
-    width: 33%;
-    // border: 1px solid #fff;
-    img {
-        width: 80%;
-    }
-}
-
-.facts__location-image, .facts__health-image {
-    margin-bottom: 20px;
-}
-
 
 /*************************************** BUTTON TOP ***/
 #buttonTop {
