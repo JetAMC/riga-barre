@@ -477,9 +477,8 @@ h1 {
 
 /*************************************** SCHEDULE ***/
 .schedule {
-  background: url("../images/pexels-andrea-piacquadio-868757.jpg") no-repeat center;
-  background-size: cover;
-  height: 530px;
+  background: url("../images/content_bg.png");
+  height: 930px;
   position: relative;
 }
 
@@ -489,7 +488,7 @@ h1 {
   background: #800080;
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
   bottom: 0;
   left: 0;
 }
@@ -506,7 +505,130 @@ h1 {
           justify-content: center;
   font-family: Lato-Bold, sans-serif;
   font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.schedule__pricelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.schedule__left-side {
+  max-width: 600px;
+  width: 100%;
+}
+
+.schedule__right-side {
+  max-width: 450px;
+  width: 100%;
+}
+
+.schedule__single, .schedule__four, .schedule__eight, .schedule__twelve, .schedule__private {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #403c4a;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 0;
+}
+
+.schedule__single:first-child, .schedule__four:first-child, .schedule__eight:first-child, .schedule__twelve:first-child, .schedule__private:first-child {
+  border-top: 1px solid #403c4a;
+}
+
+#single-form {
+  display: none;
+}
+
+#four-form {
+  border: 2px solid #333;
+  display: none;
+}
+
+#eight-form {
+  border: 2px solid #FF0000;
+  display: block;
+}
+
+#twelve-form {
+  border: 2px solid #AA2256;
+  display: none;
+}
+
+#private-form {
+  border: 2px solid #CCCCCC;
+  display: none;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: #fff;
+  padding: 40px 30px;
+  border: 4px solid #800080;
+  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+}
+
+form input, form select {
+  max-width: 350px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 33px;
+  border: 0;
+  border-bottom: 1px solid #800080;
+  font-family: Lato-Light, sans-serif;
+}
+
+form .form-title {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+
+form p {
   margin-bottom: 20px;
+}
+
+form .primary-button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 18px;
+  padding: 0 40px;
 }
 
 /*************************************** BENEFITS ***/

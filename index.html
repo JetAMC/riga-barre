@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="css/simple-lightbox.css">
     <script src="https://kit.fontawesome.com/b60c7bcec8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/theme.js"></script>
-    <script src="js/simple-lightbox.js"></script>
 </head>
 <body>
     <div class="header">
         <div class="header__container container">
             <div class="header__materials">
                 <div class="header__logo">
-                    <img src="images/logo.jpg">
+                    <img alt="" src="images/logo.jpg">
                 </div>
                 <div class="header__menu">
                     <div class="header__menu-item">
@@ -89,10 +87,99 @@
     </div>
     <div class="schedule">
         <div class="schedule__container container">
-            <div class="schedule__figure"></div>
+            <!-- <div class="schedule__figure"></div> -->
             <div class="schedule__offer">
                 <div class="schedule__title">
-                    <span>Расписание занятий</span>
+                    <span>Стоимость и расписание занятий</span>
+                </div>
+            </div>
+            <div class="schedule__pricelist">
+                <div class="schedule__left-side">
+                    <div class="schedule__single" id="single">
+                        <div class="schedule__small-title">
+                            <span>1 занятие</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p>Barre - 7 &euro;, Stretching - 10 &euro;</p>
+                        </div>
+                    </div>
+                    <div class="schedule__four" id="four">
+                        <div class="schedule__small-title">
+                            <span>4 занятия</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p>30 &euro;</p>
+                        </div>
+                    </div>
+                    <div class="schedule__eight active" id="eight">
+                        <div class="schedule__small-title">
+                            <span>8 занятий</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p>50 &euro;</p>
+                        </div>
+                    </div>
+                    <div class="schedule__twelve" id="twelve">
+                        <div class="schedule__small-title">
+                            <span>12 занятий</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p>70 &euro;</p>
+                        </div>
+                    </div>
+                    <div class="schedule__private" id="private">
+                        <div class="schedule__small-title">
+                            <span>Индивидуальные занятия</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p>60 минут - 25 &euro;, 90 минут - 30 &euro;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule__right-side">
+                    <div class="schedule__form-area" id="single-form">
+                        <form>
+                            <span class="form-title">Заполните форму</span>
+                            <P>Наш консультант свяжется с вами в ближайшее время</P>
+                            <input type="text" placeholder="Ваше Имя" required>
+                            <select required>
+                                <option value="" selected>Тип тренировки</option>
+                                <option value="Barre">Barre</option>
+                                <option value="Stretching">Stretching</option>
+                            </select>
+                            <input type="text" placeholder="Номер телефона" required>
+                            <button class="primary-button">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="schedule__form-area" id="four-form">
+                        four
+                    </div>
+                    <div class="schedule__form-area" id="eight-form">
+                        eiught
+                    </div>
+                    <div class="schedule__form-area" id="twelve-form">
+                        twelve
+                    </div>
+                    <div class="schedule__form-area" id="private-form">
+                        private
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta">
+        <div class="cta__container container">
+            <div class="cta__figure">
+            </div>
+            <div class="cta__offer">
+                <div class="cta__title">
+                    <p>АКЦИЯ! Запишись на занятие и получи 50% скидку</p>
+                </div>
+                <div class="cta__description">
+                    <p>Только в сентябре, запишись на занятие и приходи вместе с подругой чтобы получить скидку 50% на любое занятие!</p>
+                </div>
+                <div class="cta__button">
+                    <button class="primary-button">Записаться на занятие</button>
                 </div>
             </div>
         </div>
@@ -156,7 +243,7 @@
                 <div class="our-team__first">
                     <div class="our-team__square"></div>
                     <div class="our-team__image">
-                        <img src="images/first-member.jpg">   
+                        <img alt="" src="images/first-member.jpg">   
                     </div>
                     <div class="our-team__info">
                         <div class="our-team__name">
@@ -174,14 +261,14 @@
                 <div class="our-team__second">
                     <div class="our-team__second-square"></div>
                     <div class="our-team__image">
-                        <img src="images/second-member.jpg">  
+                        <img alt="" src="images/second-member.jpg">  
                     </div>
                     <div class="our-team__info">
                         <div class="our-team__name">
                             <span>Полина Литвинова</span>
                         </div>
                         <div class="our-team__education">
-                            <p><i class="fas fa-graduation-cap"></i><br> Выпускница Киевскиого Национального университета Культуры и Искусства.</p>
+                            <p><i class="fas fa-graduation-cap"></i><br> Выпускница Киевского Национального университета Культуры и Искусства.</p>
                         </div>
                         <div class="our-team__line"></div>
                         <div class="our-team__quote">
@@ -217,13 +304,13 @@
             <div class="gallery__area">
                 <div class="gallery__square"></div>
                 <div class="gallery__first-line">
-                    <a href="images/gallery/image1.jpg"><img src="images/gallery/thumbs/thumb1.jpg" alt="" /></a><a href="images/gallery/image2.jpg"><img src="images/gallery/thumbs/thumb2.jpg" alt="" /></a><a href="images/gallery/image3.jpg"><img src="images/gallery/thumbs/thumb3.jpg" alt="" /></a>
+                    <a href="images/gallery/image1.jpg"><img alt="" src="images/gallery/thumbs/thumb1.jpg" alt="" /></a><a href="images/gallery/image2.jpg"><img alt="" src="images/gallery/thumbs/thumb2.jpg" alt="" /></a><a href="images/gallery/image3.jpg"><img src="images/gallery/thumbs/thumb3.jpg" alt="" /></a>
                 </div>
                 <div class="gallery__next-line">
-                    <a href="images/gallery/image4.jpg"><img src="images/gallery/thumbs/thumb4.jpg" alt="" /></a><a href="images/gallery/image5.jpg"><img src="images/gallery/thumbs/thumb5.jpg" alt="" /></a><a href="images/gallery/image6.jpg"><img src="images/gallery/thumbs/thumb6.jpg" alt="" /></a>
+                    <a href="images/gallery/image4.jpg"><img alt="" src="images/gallery/thumbs/thumb4.jpg" alt="" /></a><a href="images/gallery/image5.jpg"><img alt="" src="images/gallery/thumbs/thumb5.jpg" alt="" /></a><a href="images/gallery/image6.jpg"><img src="images/gallery/thumbs/thumb6.jpg" alt="" /></a>
                 </div>
                 <div class="gallery__next-line">
-                    <a href="images/gallery/image7.jpg"><img src="images/gallery/thumbs/thumb7.jpg" alt="" /></a><a href="images/gallery/image8.jpg"><img src="images/gallery/thumbs/thumb8.jpg" alt="" /></a><a href="images/gallery/image9.jpg"><img src="images/gallery/thumbs/thumb9.jpg" alt="" /></a>
+                    <a href="images/gallery/image7.jpg"><img alt="" src="images/gallery/thumbs/thumb7.jpg" alt="" /></a><a href="images/gallery/image8.jpg"><img alt="" src="images/gallery/thumbs/thumb8.jpg" alt="" /></a><a href="images/gallery/image9.jpg"><img src="images/gallery/thumbs/thumb9.jpg" alt="" /></a>
                 </div>
             </div>
         </div>
@@ -235,6 +322,8 @@
     </div>
     <a href="#" id="buttonTop"><i class="fas fa-arrow-up"></i></a>
 
+<script src="js/theme.js"></script>
+<script src="js/simple-lightbox.js"></script>
 <script>
     var bigGallery = new SimpleLightbox('.gallery__area a', {
         showCounter: false,
