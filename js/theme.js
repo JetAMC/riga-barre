@@ -34,25 +34,25 @@ $(window).scroll(function(){
 
 
 $('#single, #four, #eight, #twelve, #private').click(function(event){
-    $('.active').removeClass('active');
-    $(this).addClass('active');     
-    if ($("#single").hasClass("active")) {
+    $('.schedule__active').removeClass('schedule__active');
+    $(this).addClass('schedule__active');     
+    if ($("#single").hasClass("schedule__active")) {
         $("#four-form, #eight-form, #twelve-form, #private-form").hide();
         $("#single-form").fadeIn();
     }
-    if ($("#four").hasClass("active")) {
+    if ($("#four").hasClass("schedule__active")) {
         $("#single-form, #eight-form, #twelve-form, #private-form").hide();
         $("#four-form").fadeIn();
     }
-    if ($("#eight").hasClass("active")) {
+    if ($("#eight").hasClass("schedule__active")) {
         $("#single-form, #four-form, #twelve-form, #private-form").hide();
         $("#eight-form").fadeIn();
     }
-    if ($("#twelve").hasClass("active")) {
-        $("#single-form, #four-forme, #eight-form, #private-form").hide();
+    if ($("#twelve").hasClass("schedule__active")) {
+        $("#single-form, #four-form, #eight-form, #private-form").hide();
         $("#twelve-form").fadeIn();
     }
-    if ($("#private").hasClass("active")) {
+    if ($("#private").hasClass("schedule__active")) {
         $("#single-form, #four-form, #eight-form, #twelve-form").hide();
         $("#private-form").fadeIn();
     }
