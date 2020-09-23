@@ -70,10 +70,11 @@ input:required, select:required {
   background: #060709;
   color: #fff;
   width: 100%;
+  z-index: 1000;
 }
 
 .header .container {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header__materials {
@@ -108,7 +109,12 @@ input:required, select:required {
   margin-left: 20px;
 }
 
-.header__menu p:hover {
+.header__menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__menu a:hover {
   -webkit-box-shadow: 0 4px 0 #800080;
           box-shadow: 0 4px 0 #800080;
 }
@@ -152,8 +158,10 @@ input:required, select:required {
           justify-content: center;
 }
 
-.header__language p {
+.header__language a {
   margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
 }
 
 /*************************************** MAIN-SCREEN ***/
@@ -534,41 +542,59 @@ input:required, select:required {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border: 1px solid #403c4a;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
   width: 100%;
-  padding: 20px 10px;
-  margin-bottom: 10px;
-  text-align: center;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.schedule__single:last-child, .schedule__four:last-child, .schedule__eight:last-child, .schedule__twelve:last-child, .schedule__private:last-child {
+  margin-bottom: 0;
 }
 
 .schedule__single .schedule__small-title, .schedule__four .schedule__small-title, .schedule__eight .schedule__small-title, .schedule__twelve .schedule__small-title, .schedule__private .schedule__small-title {
-  font-size: 25px;
-  margin-bottom: 10px;
-  border: 1px solid #000;
-}
-
-.schedule__single .schedule__small-title span, .schedule__four .schedule__small-title span, .schedule__eight .schedule__small-title span, .schedule__twelve .schedule__small-title span, .schedule__private .schedule__small-title span {
-  display: block;
+  font-size: 20px;
 }
 
 .schedule__single .schedule__small-text, .schedule__four .schedule__small-text, .schedule__eight .schedule__small-text, .schedule__twelve .schedule__small-text, .schedule__private .schedule__small-text {
-  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .schedule__single .schedule__price, .schedule__four .schedule__price, .schedule__eight .schedule__price, .schedule__twelve .schedule__price, .schedule__private .schedule__price {
-  font-size: 35px;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
   font-family: Lato-Bold, sans-serif;
 }
 
+.schedule__single i, .schedule__four i, .schedule__eight i, .schedule__twelve i, .schedule__private i {
+  font-size: 22px;
+  padding: 7px;
+}
+
 .schedule__active {
-  border: 4px solid #800080;
-  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
-          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+  -webkit-box-shadow: 0 4px 0 #800080;
+          box-shadow: 0 4px 0 #800080;
   background: #fff;
-  font-family: Lato-Bold, sans-serif;
 }
 
 #single-form, #four-form, #twelve-form, #private-form {

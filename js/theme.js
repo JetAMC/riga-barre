@@ -1,15 +1,16 @@
 /************** Back to top button **************/
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 1) {
         $('#buttonTop').fadeIn();
-        // $(".header").css({"position": "fixed", "opacity": "0.9"});
+        $(".header").css({"position": "fixed", "opacity": "0.9"});
+        $(".header__logo img").css({"width": "150px"});
     } else {
         $('#buttonTop').fadeOut();
-        // $(".header").css({"position": "relative", "opacity": "1"});
+        $(".header").css({"position": "relative", "opacity": "1"});
+        $(".header__logo img").css({"width": "200px"});
     }
 });
-
 
 
 // const singleTraining = document.getElementById("single");

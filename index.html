@@ -18,24 +18,27 @@
                 </div>
                 <div class="header__menu">
                     <div class="header__menu-item">
-                        <p>Услуги</p>
+                        <a href="#trainings">Услуги</a>
                     </div>
                     <div class="header__menu-item">
-                        <p>Преимущества</p>
+                        <a href="#main_benefits">Преимущества</a>
                     </div>
                     <div class="header__menu-item">
-                        <p>Педагоги</p>
+                        <a href="#price">Цены</a>
                     </div>
                     <div class="header__menu-item">
-                        <p>Галерея</p>
+                        <a href="#teachers">Педагоги</a>
+                    </div>
+                    <div class="header__menu-item">
+                        <a href="#main_gal">Галерея</a>
                     </div>
                 </div>
                 <div class="header__contacts">
                     <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
                 </div>
                 <div class="header__language">
-                    <p class="active">LV</p>
-                    <p>RU</p>
+                    <a class="active" href="index.php">LV</a>
+                    <a href="ru.php">RU</a>
                 </div>
             </div>
         </div>
@@ -51,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="services">
+    <div class="services" id="trainings">
         <div class="services__container container">
             <div class="services__title">
                 <span>Что такое Barre и Stretching</span>
@@ -85,7 +88,74 @@
             </div>
         </div>
     </div>
-    <div class="schedule">
+    <div class="benefits" id="main_benefits">
+        <div class="benefits__container container">
+            <div class="benefits__title">
+                <span>Почему каждой девушке стоит придти к нам на занятие ?</span>
+            </div>
+            <div class="benefits__all-items">
+                <div class="benefits__first">
+                    <div class="benefits__help-div"></div>
+                    <div class="benefits__right-figure benefits__right">
+                        <div class="benefits__text benefits__text-right">
+                            <span>Riga Barre - это волшебное место</span>
+                            <i class="fas fa-star"></i>
+                            <p>В нашей студии каждая женщина уделяет время себе любимой. Опытные педагоги превращают тренировки в удовольствие и приглашают наслаждаться процессом!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits__second">
+                    <div class="benefits__left-figure benefits__left">
+                        <div class="benefits__text benefits__text-left">
+                            <span>Занятия снимают стресс и напряжение</span>
+                            <i class="fas fa-heartbeat"></i>
+                            <p>Современные тренировки Stretching и Barre убирают мышечные зажимы, омолаживают организм, а также расслабляют нервную систему. Уже в первые дни вы почувствуете результат</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits__third">
+                    <div class="benefits__help-div"></div>
+                    <div class="benefits__right-figure benefits__right">
+                        <div class="benefits__text benefits__text-right">
+                            <span>Обретете новое хобби, почувствуете себя живой и счастливой</span>
+                            <i class="fas fa-dove"></i>
+                            <p>Не бойтесь пробовать новый вид занятий, это помогает вам развиваться физически и духовно. Занятия которые приносят удовольствие также наполняют вашу жизнь радостью, вы почувствуете приток энергии и будете в восторге</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits__fourth">
+                    <div class="benefits__left-figure benefits__left">
+                        <div class="benefits__text benefits__text-left">
+                            <span>Простой способ обрести чудесную фигуру</span>
+                            <i class="fab fa-envira"></i>
+                            <p>Наши педагоги создают тренировки где для обретения прекрасного тела вовсе не нужно таскать железо. У вас есть возможность создать чудесную форму выполняя эстетически красивые, женственные упражнения. Быть женщиной - главная цель для нас!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="benefits__button">
+                    <button class="primary-button">Записаться на занятие</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="cta">
+        <div class="cta__container container">
+            <div class="cta__figure">
+            </div>
+            <div class="cta__offer">
+                <div class="cta__title">
+                    <p>АКЦИЯ! Запишись на занятие и получи 50% скидку</p>
+                </div>
+                <div class="cta__description">
+                    <p>Только в сентябре, запишись на занятие и приходи вместе с подругой чтобы получить скидку 50% на любое занятие!</p>
+                </div>
+                <div class="cta__button">
+                    <button class="primary-button">Записаться на занятие</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="schedule" id="price">
         <div class="schedule__container container">
             <div class="schedule__offer">
                 <div class="schedule__title">
@@ -96,10 +166,10 @@
                 <div class="schedule__left-side">
                     <div class="schedule__single" id="single">
                         <div class="schedule__small-title">
-                            <span>1 занятие</span>
+                            <span>1 занятие - Barre / Stretching</span>
                         </div>
                         <div class="schedule__small-text">
-                            <p>Barre - 7 &euro;<br>Stretching - 10 &euro;</p>
+                            <p class="schedule__price">7 <i class="fas fa-euro-sign"></i> / 10 <i class="fas fa-euro-sign"></i></p>
                         </div>
                     </div>
                     <div class="schedule__four" id="four">
@@ -107,7 +177,7 @@
                             <span>4 занятия</span>
                         </div>
                         <div class="schedule__small-text">
-                            <p class="schedule__price">30 &euro;</p>
+                            <p class="schedule__price">30 <i class="fas fa-euro-sign"></i></p>
                         </div>
                     </div>
                     <div class="schedule__eight schedule__active" id="eight">
@@ -115,7 +185,7 @@
                             <span>8 занятий</span>
                         </div>
                         <div class="schedule__small-text">
-                            <p class="schedule__price">50 &euro;</p>
+                            <p class="schedule__price">50 <i class="fas fa-euro-sign"></i></p>
                         </div>
                     </div>
                     <div class="schedule__twelve" id="twelve">
@@ -123,15 +193,15 @@
                             <span>12 занятий</span>
                         </div>
                         <div class="schedule__small-text">
-                            <p class="schedule__price">70 &euro;</p>
+                            <p class="schedule__price">70 <i class="fas fa-euro-sign"></i></p>
                         </div>
                     </div>
                     <div class="schedule__private" id="private">
                         <div class="schedule__small-title">
-                            <span>Индивидуальные занятия</span>
+                            <span>Индивидуальные - 60 мин. / 90 мин.</span>
                         </div>
                         <div class="schedule__small-text">
-                            <p>60 минут - 25 &euro;<br>90 минут - 30 &euro;</p>
+                            <p class="schedule__price">25 <i class="fas fa-euro-sign"></i> / 30 <i class="fas fa-euro-sign"></i></p>
                         </div>
                     </div>
                 </div>
@@ -227,74 +297,7 @@
             </div>
         </div>
     </div>
-    <div class="cta">
-        <div class="cta__container container">
-            <div class="cta__figure">
-            </div>
-            <div class="cta__offer">
-                <div class="cta__title">
-                    <p>АКЦИЯ! Запишись на занятие и получи 50% скидку</p>
-                </div>
-                <div class="cta__description">
-                    <p>Только в сентябре, запишись на занятие и приходи вместе с подругой чтобы получить скидку 50% на любое занятие!</p>
-                </div>
-                <div class="cta__button">
-                    <button class="primary-button">Записаться на занятие</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefits__container container">
-            <div class="benefits__title">
-                <span>Почему каждой девушке стоит придти к нам на занятие ?</span>
-            </div>
-            <div class="benefits__all-items">
-                <div class="benefits__first">
-                    <div class="benefits__help-div"></div>
-                    <div class="benefits__right-figure benefits__right">
-                        <div class="benefits__text benefits__text-right">
-                            <span>Riga Barre - это волшебное место</span>
-                            <i class="fas fa-star"></i>
-                            <p>В нашей студии каждая женщина уделяет время себе любимой. Опытные педагоги превращают тренировки в удовольствие и приглашают наслаждаться процессом!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="benefits__second">
-                    <div class="benefits__left-figure benefits__left">
-                        <div class="benefits__text benefits__text-left">
-                            <span>Занятия снимают стресс и напряжение</span>
-                            <i class="fas fa-heartbeat"></i>
-                            <p>Современные тренировки Stretching и Barre убирают мышечные зажимы, омолаживают организм, а также расслабляют нервную систему. Уже в первые дни вы почувствуете результат</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="benefits__third">
-                    <div class="benefits__help-div"></div>
-                    <div class="benefits__right-figure benefits__right">
-                        <div class="benefits__text benefits__text-right">
-                            <span>Обретете новое хобби, почувствуете себя живой и счастливой</span>
-                            <i class="fas fa-dove"></i>
-                            <p>Не бойтесь пробовать новый вид занятий, это помогает вам развиваться физически и духовно. Занятия которые приносят удовольствие также наполняют вашу жизнь радостью, вы почувствуете приток энергии и будете в восторге</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="benefits__fourth">
-                    <div class="benefits__left-figure benefits__left">
-                        <div class="benefits__text benefits__text-left">
-                            <span>Простой способ обрести чудесную фигуру</span>
-                            <i class="fab fa-envira"></i>
-                            <p>Наши педагоги создают тренировки где для обретения прекрасного тела вовсе не нужно таскать железо. У вас есть возможность создать чудесную форму выполняя эстетически красивые, женственные упражнения. Быть женщиной - главная цель для нас!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="benefits__button">
-                    <button class="primary-button">Записаться на занятие</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="our-team">
+    <div class="our-team" id="teachers">
         <div class="our-team__container container">
             <div class="our-team__title">
                 <span>Наши педагоги - профессионалы своего дела!</span>
@@ -356,7 +359,7 @@
             </div>
         </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" id="main_gal">
         <div class="gallery__container container">
             <div class="gallery__title">
                 <span>Галерея</span>
@@ -377,7 +380,7 @@
     </div>
     <div class="footer">
         <div class="footer__container">
-
+            <!-- logo, title (deviz), telefona, email, adres, soc. seti, karta, MENU budu perenositj ???-->
         </div>
     </div>
     <a href="#" id="buttonTop"><i class="fas fa-arrow-up"></i></a>

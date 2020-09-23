@@ -78,8 +78,9 @@ input:required, select:required {
     background: #060709;
     color: #fff;
     width: 100%;
+    z-index: 1000;
     .container {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 }
 
@@ -96,7 +97,9 @@ input:required, select:required {
     div {
         margin-left: 20px;
     }
-    p {
+    a {
+        text-decoration: none;
+        color: #fff;
         &:hover {
             box-shadow: 0 4px 0 $mainColor;
         }
@@ -122,8 +125,10 @@ input:required, select:required {
 
 .header__language {
     @include flexCenter(center, center);
-    p {
+    a {
         margin-left: 15px;
+        text-decoration: none;
+        color: #fff;
     }
 }
 
@@ -399,40 +404,43 @@ input:required, select:required {
 }
 
 .schedule__single, .schedule__four, .schedule__eight, .schedule__twelve, .schedule__private {
-    @include flexCenter(center, space-around);
-    // flex-direction: row;
-    border: 1px solid $darkColor;
+    @include flexCenter(center, space-between);
+    // border: 1px solid $darkColor;
+    background: #fff;
     width: 100%;
-    padding: 20px 10px;
-    margin-bottom: 10px;
-    text-align: center;
+    padding: 15px 10px;
+    // height: 55px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:last-child {
+        margin-bottom: 0;
+    }
     .schedule__small-title {
-        font-size: 25px;
-        // font-family: Lato-Bold, sans-serif;
-        margin-bottom: 10px;
-        border: 1px solid #000;
-        span {
-            display: block;
-        }
+        font-size: 20px;
     }
     .schedule__small-text {
-        // font-size: 30px;
-        border: 1px solid #000;
+        // border: 1px solid #000;
+        // border: $defaultBorder;
+        // background: #fff;
+        // padding: 15px;
+        // width: 170px;
+        @include flexCenter(center, center);
     }
     .schedule__price {
-        font-size: 35px;
-        // background: #ff0000;
-        width: 100%;
+        @include flexCenter(center, center);
+        font-size: 30px;
         font-family: Lato-Bold, sans-serif;
-        // font-weight: 900;
+    }
+    i {
+        font-size: 22px;
+        padding: 7px;
     }
 }
 .schedule__active {
-    border: $defaultBorder;
-    // border: 1px solid $mainColor;
-    box-shadow: $defaultShadow;
+    // border: $defaultBorder;
+    box-shadow: 0 4px 0 $mainColor;
+    // box-shadow: $defaultShadow;
     background: #fff;
-    font-family: Lato-Bold, sans-serif;
 }
 
 .schedule__private {
