@@ -411,7 +411,7 @@ input:required, select:required {
     padding: 15px 10px;
     // height: 55px;
     margin-bottom: 20px;
-    cursor: pointer;
+    // cursor: pointer;
     &:last-child {
         margin-bottom: 0;
     }
@@ -419,11 +419,6 @@ input:required, select:required {
         font-size: 20px;
     }
     .schedule__small-text {
-        // border: 1px solid #000;
-        // border: $defaultBorder;
-        // background: #fff;
-        // padding: 15px;
-        // width: 170px;
         @include flexCenter(center, center);
     }
     .schedule__price {
@@ -436,24 +431,18 @@ input:required, select:required {
         padding: 7px;
     }
 }
-.schedule__active {
-    // border: $defaultBorder;
-    box-shadow: 0 4px 0 $mainColor;
-    // box-shadow: $defaultShadow;
-    background: #fff;
-}
+// .schedule__active {
+//     box-shadow: 0 4px 0 $mainColor;
+//     background: #fff;
+// }
 
-.schedule__private {
-    // width: 60% !important;
-}
+// #single-form, #four-form, #twelve-form, #private-form {
+//     display: none;
+// }
 
-#single-form, #four-form, #twelve-form, #private-form {
-    display: none;
-}
-
-#eight-form {
-    display: block;
-}
+// #single-form {
+//     display: block;
+// }
 
 form {
     @include flexCenter(center, center);
@@ -474,14 +463,14 @@ form {
         border-bottom: 1px solid $darkColor;
         font-family: Lato-Light, sans-serif;
     }
-    label.schedule__select {
+    label.custom-select {
         position: relative;
         display: inline-block;
         max-width: 350px;
         width: 100%;
         margin-bottom: 33px;
     }
-    .schedule__select select {
+    .custom-select select {
         display: inline-block;
         margin: 0;
         outline: none;
@@ -572,7 +561,7 @@ form {
     margin-bottom: 100px;
     box-shadow: $defaultShadow;
     margin-bottom: 40px;
-    // border: 4px solid $mainColor;
+    border: 4px solid $mainColor;
     display: flex;
 }
 
@@ -602,12 +591,12 @@ form {
 }
 
 .benefits__right-figure, .benefits__left-figure {
-    background: $darkColor;
+    background: #fff;
     width: 40%;
     height: 100%;
     bottom: 0;
     right: 0;
-    color: #fff;
+    color: #000;
     @include flexCenter(center, center);
     padding: 10px;
     text-align: center;
@@ -633,6 +622,7 @@ form {
     i {
         font-size: 40px;
         margin-bottom: 20px;
+        color: $mainColor;
     }
 }
 
@@ -662,6 +652,8 @@ form {
 }
 
 .gallery__area {
+    position: relative;
+    z-index: 2;
     img {
         width: 33%;
         // height: 100%;
@@ -673,26 +665,53 @@ form {
     }
 }
 
-.gallery__square {
-    width: 80px;
-    height: 150px;
-    border: $defaultBorder;
-    position: absolute;
-    z-index: 1;
-    margin-top: -30px;
-    margin-left: -20px;
-}
-
 .gallery__next-line {
     margin-top: -5px;
 }
 
 /*************************************** FOOTER ***/
 .footer {
-    background: $darkColor;
-    height: 400px;
+    background: #060709;
+    color: #fff;
+    .container {
+        padding: 40px 0;
+    }
+    a {
+        color: #fff;
+    }
 }
 
+.footer__container {
+    @include flexCenter(top, space-between);
+    flex-direction: row;
+}
+
+.footer__company, .footer__contact, .footer__ask {
+    width: 33%;
+    div {
+        @include flexCenter(center, flex-start);
+        margin-bottom: 15px;
+    }
+    span {
+        font-size: 25px;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.footer__line {
+    border-top: $defaultBorder;
+    width: 50px;
+    padding-bottom: 15px;
+}
+
+.footer__icon {
+    width: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 7px;
+}
 /*************************************** BUTTON TOP ***/
 #buttonTop {
     text-align: center;
@@ -702,7 +721,7 @@ form {
     bottom: 55px;
     right: 16px;
     z-index: 999;
-    background: #060709;
+    background: $darkColor;
     color: #fff;
     height: 48px;
     width: 48px;
@@ -713,6 +732,70 @@ form {
 
 
 
+/********************************************** POP UP *****/
+.bg {
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0, 0.9);
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
+}
+.pop-up {
+    max-width: 450px;
+    position: fixed; 
+    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+    text-align: center;
+    .close {
+        position: absolute; 
+        right: 0; 
+        margin-right: 12px;
+        font-size: 40px;
+        color: $darkColor;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    p {
+        color: #666666;
+    }
+    .primary-button {
+        margin-bottom: 10px;
+        // width: 270px;
+    }
+}
+.pop-up__confidential {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/********************************************** THANK YOU *****/
+.thank-you {
+    height: 500px;
+    background: url('../images/main-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+.thank-you__container {
+    padding-top: 40px;
+}
+.thank-you__text-area {
+    color: #fff;
+    text-align: center;
+    p {
+        margin: 0;
+        font-size: 35px;
+    }
+}
+.thank-you__final-words h1 {
+    font-size: 45px;
+}
 
 
 

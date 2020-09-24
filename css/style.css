@@ -549,7 +549,6 @@ input:required, select:required {
   width: 100%;
   padding: 15px 10px;
   margin-bottom: 20px;
-  cursor: pointer;
 }
 
 .schedule__single:last-child, .schedule__four:last-child, .schedule__eight:last-child, .schedule__twelve:last-child, .schedule__private:last-child {
@@ -591,20 +590,6 @@ input:required, select:required {
   padding: 7px;
 }
 
-.schedule__active {
-  -webkit-box-shadow: 0 4px 0 #800080;
-          box-shadow: 0 4px 0 #800080;
-  background: #fff;
-}
-
-#single-form, #four-form, #twelve-form, #private-form {
-  display: none;
-}
-
-#eight-form {
-  display: block;
-}
-
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,7 +624,7 @@ form input, form select {
   font-family: Lato-Light, sans-serif;
 }
 
-form label.schedule__select {
+form label.custom-select {
   position: relative;
   display: inline-block;
   max-width: 350px;
@@ -647,7 +632,7 @@ form label.schedule__select {
   margin-bottom: 33px;
 }
 
-form .schedule__select select {
+form .custom-select select {
   display: inline-block;
   margin: 0;
   outline: none;
@@ -777,6 +762,7 @@ form .primary-button {
   -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
           box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
   margin-bottom: 40px;
+  border: 4px solid #800080;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,12 +794,12 @@ form .primary-button {
 }
 
 .benefits__right-figure, .benefits__left-figure {
-  background: #403c4a;
+  background: #fff;
   width: 40%;
   height: 100%;
   bottom: 0;
   right: 0;
-  color: #fff;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,6 +838,7 @@ form .primary-button {
 .benefits__text i {
   font-size: 40px;
   margin-bottom: 20px;
+  color: #800080;
 }
 
 .benefits__text-left {
@@ -887,6 +874,11 @@ form .primary-button {
   color: #333;
 }
 
+.gallery__area {
+  position: relative;
+  z-index: 2;
+}
+
 .gallery__area img {
   width: 33%;
   -webkit-transition: -webkit-transform .2s;
@@ -903,24 +895,75 @@ form .primary-button {
           box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
 }
 
-.gallery__square {
-  width: 80px;
-  height: 150px;
-  border: 4px solid #800080;
-  position: absolute;
-  z-index: 1;
-  margin-top: -30px;
-  margin-left: -20px;
-}
-
 .gallery__next-line {
   margin-top: -5px;
 }
 
 /*************************************** FOOTER ***/
 .footer {
-  background: #403c4a;
-  height: 400px;
+  background: #060709;
+  color: #fff;
+}
+
+.footer .container {
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__company, .footer__contact, .footer__ask {
+  width: 33%;
+}
+
+.footer__company div, .footer__contact div, .footer__ask div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.footer__company span, .footer__contact span, .footer__ask span {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__line {
+  border-top: 4px solid #800080;
+  width: 50px;
+  padding-bottom: 15px;
+}
+
+.footer__icon {
+  width: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-right: 7px;
 }
 
 /*************************************** BUTTON TOP ***/
@@ -932,13 +975,87 @@ form .primary-button {
   bottom: 55px;
   right: 16px;
   z-index: 999;
-  background: #060709;
+  background: #403c4a;
   color: #fff;
   height: 48px;
   width: 48px;
   font-size: 20px;
   text-decoration: none;
   border-radius: 50%;
+}
+
+/********************************************** POP UP *****/
+.bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.pop-up {
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2001;
+  text-align: center;
+}
+
+.pop-up .close {
+  position: absolute;
+  right: 0;
+  margin-right: 12px;
+  font-size: 40px;
+  color: #403c4a;
+  cursor: pointer;
+}
+
+.pop-up .close:hover {
+  opacity: 0.8;
+}
+
+.pop-up p {
+  color: #666666;
+}
+
+.pop-up .primary-button {
+  margin-bottom: 10px;
+}
+
+.pop-up__confidential {
+  margin: 0;
+  font-size: 15px;
+}
+
+/********************************************** THANK YOU *****/
+.thank-you {
+  height: 500px;
+  background: url("../images/main-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.thank-you__container {
+  padding-top: 40px;
+}
+
+.thank-you__text-area {
+  color: #fff;
+  text-align: center;
+}
+
+.thank-you__text-area p {
+  margin: 0;
+  font-size: 35px;
+}
+
+.thank-you__final-words h1 {
+  font-size: 45px;
 }
 
 @media screen and (max-width: 1000px) {

@@ -21,10 +21,10 @@
                         <a href="#trainings">Услуги</a>
                     </div>
                     <div class="header__menu-item">
-                        <a href="#main_benefits">Преимущества</a>
+                        <a href="#price">Цены</a>
                     </div>
                     <div class="header__menu-item">
-                        <a href="#price">Цены</a>
+                        <a href="#main_benefits">Преимущества</a>
                     </div>
                     <div class="header__menu-item">
                         <a href="#teachers">Педагоги</a>
@@ -46,11 +46,11 @@
     <div class="main-screen">
         <div class="main-screen__container container">
             <div class="main-screen__title">
-                <h1>Занятия Barre и Stretching с профессиональными педагогами в Риге</h1>
+                <h1>Занятия Barre и Stretching с профессиональными<br> педагогами в Риге</h1>
                 <h2>Усовершенствуйте красоту тела, развивайте гибкость и пластичность!</h2>
             </div>
             <div class="main-screen__button">
-                <button class="primary-button">Записаться на занятие</button>
+                <button class="primary-button default-form">Записаться на занятие</button>
             </div>
         </div>
     </div>
@@ -88,10 +88,151 @@
             </div>
         </div>
     </div>
+    <div class="schedule" id="price">
+        <div class="schedule__container container">
+            <div class="schedule__offer">
+                <div class="schedule__title">
+                    <span>Стоимость и расписание занятий</span>
+                </div>
+            </div>
+            <div class="schedule__pricelist">
+                <div class="schedule__left-side">
+                    <div class="schedule__single" id="single">
+                        <div class="schedule__small-title">
+                            <span>1 занятие - Barre / Stretching</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p class="schedule__price">7 <i class="fas fa-euro-sign"></i> / 10 <i class="fas fa-euro-sign"></i></p>
+                        </div>
+                    </div>
+                    <div class="schedule__four" id="four">
+                        <div class="schedule__small-title">
+                            <span>4 занятия</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p class="schedule__price">30 <i class="fas fa-euro-sign"></i></p>
+                        </div>
+                    </div>
+                    <div class="schedule__eight" id="eight">
+                        <div class="schedule__small-title">
+                            <span>8 занятий</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p class="schedule__price">50 <i class="fas fa-euro-sign"></i></p>
+                        </div>
+                    </div>
+                    <div class="schedule__twelve" id="twelve">
+                        <div class="schedule__small-title">
+                            <span>12 занятий</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p class="schedule__price">70 <i class="fas fa-euro-sign"></i></p>
+                        </div>
+                    </div>
+                    <div class="schedule__private" id="private">
+                        <div class="schedule__small-title">
+                            <span>Индивидуальные - 60 мин. / 90 мин.</span>
+                        </div>
+                        <div class="schedule__small-text">
+                            <p class="schedule__price">25 <i class="fas fa-euro-sign"></i> / 30 <i class="fas fa-euro-sign"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule__right-side">
+                    <div class="schedule__form-area" id="single-form">
+                        <form>
+                            <span class="form-title">Заполните форму</span>
+                            <P>Наш консультант свяжется с вами в ближайшее время</P>
+                            <input type="text" placeholder="Ваше Имя" required>
+                            <label class="custom-select">
+                                <select id="main" required>
+                                    <option value="" selected>Выберете занятие</option>
+                                    <option value="Single training">1 занятие: Barre 7 €, Stretching 10 €</option>
+                                    <option value="Four trainings">4 занятия: 30 €</option>
+                                    <option value="Eight trainings">8 занятий: 50 €</option>
+                                    <option value="Twelve trainings">12 занятий: 70 €</option>
+                                    <option value="Private training">Индивидуальное: 60 мин. 25 €, 90 мин. 30 €</option>
+                                </select>
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <input type="text" placeholder="Номер телефона" required>
+                            <button class="primary-button">Отправить</button>
+                        </form>
+                    </div>
+                    <!-- <div class="schedule__form-area" id="four-form">
+                        four
+                    </div>
+                    <div class="schedule__form-area" id="eight-form">
+                    </div>
+                    <div class="schedule__form-area" id="twelve-form">
+                        twelve
+                    </div>
+                    <div class="schedule__form-area" id="private-form">
+                        private
+                    </div> -->
+                </div>
+            </div>
+            <div class="schedule__week">
+                <div class="schedule__monday">
+                    <span class="schedule__week-title">Понедельник</span>
+                    <i class="fas fa-calendar-alt"></i>
+                    <p class="schedule__week-text">Barre <br>19:00 - 20:00</p>
+                    <i class="fas fa-map-pin"></i>
+                    <p class="schedule__week-address">Turaidas iela 2A</p>
+                </div>
+                <div class="schedule__tuesday">
+                    <span class="schedule__week-title">Вторник</span>
+                    <i class="fas fa-calendar-alt"></i>
+                    <p class="schedule__week-text">Barre 12:00 - 13:00</p>
+                    <p class="schedule__week-text">Stretching 19:30 - 20:30</p>
+                    <i class="fas fa-map-pin"></i>
+                    <p class="schedule__week-address">Ieriķu iela 15</p>
+                </div>
+                <div class="schedule__wednesday">
+                    <span class="schedule__week-title">Среда</span>
+                    <i class="fas fa-calendar-alt"></i>
+                    <p class="schedule__week-text">Barre <br>19:00 - 20:00</p>
+                    <i class="fas fa-map-pin"></i>
+                    <p class="schedule__week-address">Turaidas iela 2A</p>
+                </div>
+                <div class="schedule__thursday">
+                    <span class="schedule__week-title">Четверг</span>
+                    <i class="fas fa-calendar-alt"></i>
+                    <p class="schedule__week-text">Stretching <br>19:30 - 20:30</p>
+                    <i class="fas fa-map-pin"></i>
+                    <p class="schedule__week-address">Ieriķu iela 15</p>
+                </div>
+                <div class="schedule__friday">
+                    <span class="schedule__week-title">Пятница</span>
+                    <i class="fas fa-calendar-alt"></i>
+                    <p class="schedule__week-text">Barre <br>12:00 - 13:00</p>
+                    <i class="fas fa-map-pin"></i>
+                    <p class="schedule__week-address">Ieriķu iela 15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta">
+        <div class="cta__container container">
+            <div class="cta__figure">
+            </div>
+            <div class="cta__offer">
+                <div class="cta__title">
+                    <p>АКЦИЯ! Запишись на занятие и получи 50% скидку</p>
+                </div>
+                <div class="cta__description">
+                    <p>Только в сентябре, запишись на занятие и приходи вместе с подругой чтобы получить скидку 50% на любое занятие!</p>
+                </div>
+                <div class="cta__button">
+                    <button class="primary-button default-form">Записаться на занятие</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="benefits" id="main_benefits">
         <div class="benefits__container container">
             <div class="benefits__title">
-                <span>Почему каждой девушке стоит придти к нам на занятие ?</span>
+                <span>Почему каждой девушке стоит придти к нам на занятие</span>
             </div>
             <div class="benefits__all-items">
                 <div class="benefits__first">
@@ -135,165 +276,6 @@
                 <!-- <div class="benefits__button">
                     <button class="primary-button">Записаться на занятие</button>
                 </div> -->
-            </div>
-        </div>
-    </div>
-    <div class="cta">
-        <div class="cta__container container">
-            <div class="cta__figure">
-            </div>
-            <div class="cta__offer">
-                <div class="cta__title">
-                    <p>АКЦИЯ! Запишись на занятие и получи 50% скидку</p>
-                </div>
-                <div class="cta__description">
-                    <p>Только в сентябре, запишись на занятие и приходи вместе с подругой чтобы получить скидку 50% на любое занятие!</p>
-                </div>
-                <div class="cta__button">
-                    <button class="primary-button">Записаться на занятие</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="schedule" id="price">
-        <div class="schedule__container container">
-            <div class="schedule__offer">
-                <div class="schedule__title">
-                    <span>Стоимость и расписание занятий</span>
-                </div>
-            </div>
-            <div class="schedule__pricelist">
-                <div class="schedule__left-side">
-                    <div class="schedule__single" id="single">
-                        <div class="schedule__small-title">
-                            <span>1 занятие - Barre / Stretching</span>
-                        </div>
-                        <div class="schedule__small-text">
-                            <p class="schedule__price">7 <i class="fas fa-euro-sign"></i> / 10 <i class="fas fa-euro-sign"></i></p>
-                        </div>
-                    </div>
-                    <div class="schedule__four" id="four">
-                        <div class="schedule__small-title">
-                            <span>4 занятия</span>
-                        </div>
-                        <div class="schedule__small-text">
-                            <p class="schedule__price">30 <i class="fas fa-euro-sign"></i></p>
-                        </div>
-                    </div>
-                    <div class="schedule__eight schedule__active" id="eight">
-                        <div class="schedule__small-title">
-                            <span>8 занятий</span>
-                        </div>
-                        <div class="schedule__small-text">
-                            <p class="schedule__price">50 <i class="fas fa-euro-sign"></i></p>
-                        </div>
-                    </div>
-                    <div class="schedule__twelve" id="twelve">
-                        <div class="schedule__small-title">
-                            <span>12 занятий</span>
-                        </div>
-                        <div class="schedule__small-text">
-                            <p class="schedule__price">70 <i class="fas fa-euro-sign"></i></p>
-                        </div>
-                    </div>
-                    <div class="schedule__private" id="private">
-                        <div class="schedule__small-title">
-                            <span>Индивидуальные - 60 мин. / 90 мин.</span>
-                        </div>
-                        <div class="schedule__small-text">
-                            <p class="schedule__price">25 <i class="fas fa-euro-sign"></i> / 30 <i class="fas fa-euro-sign"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule__right-side">
-                    <div class="schedule__form-area" id="single-form">
-                        <form>
-                            <span class="form-title">Заполните форму</span>
-                            <P>Наш консультант свяжется с вами в ближайшее время</P>
-                            <input type="text" placeholder="Ваше Имя" required>
-                            <label class="schedule__select">
-                                <select id="main" required>
-                                    <option value="">Выберете занятие</option>
-                                    <option value="Single training" selected>1 занятие: Barre 7 €, Stretching 10 €</option>
-                                    <option value="Four trainings">4 занятия: 30 €</option>
-                                    <option value="Eight trainings">8 занятий: 50 €</option>
-                                    <option value="Twelve trainings">12 занятий: 70 €</option>
-                                    <option value="Private training">Индивидуальное: 60 мин. 25 €, 90 мин. 30 €</option>
-                                </select>
-                                <i class="fas fa-angle-down"></i>
-                            </label>
-                            <input type="text" placeholder="Номер телефона" required>
-                            <button class="primary-button">Отправить</button>
-                        </form>
-                    </div>
-                    <div class="schedule__form-area" id="four-form">
-                        four
-                    </div>
-                    <div class="schedule__form-area" id="eight-form">
-                        <form>
-                            <span class="form-title">Заполните форму</span>
-                            <P>Наш консультант свяжется с вами в ближайшее время</P>
-                            <input type="text" placeholder="Ваше Имя" required>
-                            <label class="schedule__select">
-                                <select id="main" required>
-                                    <option value="">Выберете занятие</option>
-                                    <option value="Single training">1 занятие: Barre 7 €, Stretching 10 €</option>
-                                    <option value="Four trainings">4 занятия: 30 €</option>
-                                    <option value="Eight trainings" selected>8 занятий: 50 €</option>
-                                    <option value="Twelve trainings">12 занятий: 70 €</option>
-                                    <option value="Private training">Индивидуальное: 60 мин. 25 €, 90 мин. 30 €</option>
-                                </select>
-                                <i class="fas fa-angle-down"></i>
-                            </label>
-                            <input type="text" placeholder="Номер телефона" required>
-                            <button class="primary-button">Отправить</button>
-                        </form>
-                    </div>
-                    <div class="schedule__form-area" id="twelve-form">
-                        twelve
-                    </div>
-                    <div class="schedule__form-area" id="private-form">
-                        private
-                    </div>
-                </div>
-            </div>
-            <div class="schedule__week">
-                <div class="schedule__monday">
-                    <span class="schedule__week-title">Понедельник</span>
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="schedule__week-text">Barre <br>19:00 - 20:00</p>
-                    <i class="fas fa-map-pin"></i>
-                    <p class="schedule__week-address">Turaidas iela 2A</p>
-                </div>
-                <div class="schedule__tuesday">
-                    <span class="schedule__week-title">Вторник</span>
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="schedule__week-text">Barre 12:00 - 13:00</p>
-                    <p class="schedule__week-text">Stretching 19:30 - 20:30</p>
-                    <i class="fas fa-map-pin"></i>
-                    <p class="schedule__week-address">Ieriķu iela 15</p>
-                </div>
-                <div class="schedule__wednesday">
-                    <span class="schedule__week-title">Среда</span>
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="schedule__week-text">Barre <br>19:00 - 20:00</p>
-                    <i class="fas fa-map-pin"></i>
-                    <p class="schedule__week-address">Turaidas iela 2A</p>
-                </div>
-                <div class="schedule__thursday">
-                    <span class="schedule__week-title">Четверг</span>
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="schedule__week-text">Stretching <br>19:30 - 20:30</p>
-                    <i class="fas fa-map-pin"></i>
-                    <p class="schedule__week-address">Ieriķu iela 15</p>
-                </div>
-                <div class="schedule__friday">
-                    <span class="schedule__week-title">Пятница</span>
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="schedule__week-text">Barre <br>12:00 - 13:00</p>
-                    <i class="fas fa-map-pin"></i>
-                    <p class="schedule__week-address">Ieriķu iela 15</p>
-                </div>
             </div>
         </div>
     </div>
@@ -354,7 +336,7 @@
                     <p>Только в сентябре, запишись на занятие и приходи вместе с подругой чтобы получить скидку 50% на любое занятие!</p>
                 </div>
                 <div class="cta__button">
-                    <button class="primary-button">Записаться на занятие</button>
+                    <button class="primary-button default-form">Записаться на занятие</button>
                 </div>
             </div>
         </div>
@@ -365,7 +347,6 @@
                 <span>Галерея</span>
             </div>
             <div class="gallery__area">
-                <div class="gallery__square"></div>
                 <div class="gallery__first-line">
                     <a href="images/gallery/image1.jpg"><img alt="" src="images/gallery/thumbs/thumb1.jpg" alt="" /></a><a href="images/gallery/image2.jpg"><img alt="" src="images/gallery/thumbs/thumb2.jpg" alt="" /></a><a href="images/gallery/image3.jpg"><img src="images/gallery/thumbs/thumb3.jpg" alt="" /></a>
                 </div>
@@ -379,11 +360,80 @@
         </div>
     </div>
     <div class="footer">
-        <div class="footer__container">
-            <!-- logo, title (deviz), telefona, email, adres, soc. seti, karta, MENU budu perenositj ???-->
+        <div class="footer__container container">
+            <div class="footer__company">
+                <div class="footer__socials-title">
+                    <span>Социальные сети</span>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__ig">
+                    <p class="footer__icon"><i class="fab fa-instagram"></i></p>
+                    <a href="https://www.instagram.com/riga_barre/" target="_blank" class="footer__text">Instagram</a>
+                </div>
+                <div class="footer__fb">
+                    <p class="footer__icon"><i class="fab fa-facebook-f"></i></p>
+                    <a href="https://www.facebook.com/RigaBarre-111457423911989/" target="_blank" class="footer__text">Facebook</a>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__contact-title">
+                    <span>Контакты</span>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__phone">
+                    <p class="footer__icon"><i class="fas fa-phone-square-alt"></i></p>
+                    <a href="tel:+37122222222" class="footer__text">22222222</a>
+                </div>
+                <div class="footer__email">
+                    <p class="footer__icon"><i class="fas fa-at"></i></p>
+                    <a href="mailto:info@rigabarre.lv" class="footer__text">info@rigabarre.lv</a>
+                </div>
+                <div class="footer__address">
+                    <p class="footer__icon"><i class="fas fa-map-pin"></i></p>
+                    <p class="footer__text">Ieriķu iela 15, Turaidas iela 2A</p>
+                </div>
+            </div>
+            <div class="footer__ask">
+                <div class="footer__ask-title">
+                    <span>У вас есть вопрос?</span>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__button">
+                    <button class="primary-button">Задать вопрос</button>
+                </div>
+            </div>
         </div>
     </div>
     <a href="#" id="buttonTop"><i class="fas fa-arrow-up"></i></a>
+
+
+
+<!-- default pop up -->
+<div class="bg" style="display: none;">
+</div>
+<div class="pop-up" style="display: none;">
+    <span class="close">&times;</span>
+    <form action="order.php" method="POST">
+        <span class="form-title">Заполните форму</span>
+        <P>Наш консультант свяжется с вами в ближайшее время</P>
+        <input type="text" placeholder="Ваше Имя" required>
+        <label class="custom-select">
+            <select id="main" required>
+                <option value="" selected>Выберете занятие</option>
+                <option value="Single training">1 занятие: Barre 7 €, Stretching 10 €</option>
+                <option value="Four trainings">4 занятия: 30 €</option>
+                <option value="Eight trainings">8 занятий: 50 €</option>
+                <option value="Twelve trainings">12 занятий: 70 €</option>
+                <option value="Private training">Индивидуальное: 60 мин. 25 €, 90 мин. 30 €</option>
+            </select>
+            <i class="fas fa-angle-down"></i>
+        </label>
+        <input type="text" placeholder="Номер телефона" required>
+        <button class="primary-button" type="submit">Отправить</button>
+        <p class="pop-up__confidential">Гарантируем безопасность данных</p>
+    </form>
+</div>
+
 
 <script src="js/theme.js"></script>
 <script src="js/simple-lightbox.js"></script>
