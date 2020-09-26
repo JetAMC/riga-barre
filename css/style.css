@@ -60,7 +60,7 @@ h1 {
   background: #b300b2;
 }
 
-input:required, select:required {
+input:required, select:required, textarea:required {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -725,7 +725,7 @@ form {
   height: 100%;
 }
 
-form input, form select {
+form input, form select, form textarea {
   max-width: 350px;
   width: 100%;
   padding: 10px 0;
@@ -1145,7 +1145,45 @@ form .primary-button {
   margin-bottom: 10px;
 }
 
-.pop-up__confidential {
+.pop-up .pop-up__confidential {
+  margin: 0;
+  font-size: 15px;
+}
+
+.pop-up-question {
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2001;
+  text-align: center;
+}
+
+.pop-up-question .close {
+  position: absolute;
+  right: 0;
+  margin-right: 12px;
+  font-size: 40px;
+  color: #403c4a;
+  cursor: pointer;
+}
+
+.pop-up-question .close:hover {
+  opacity: 0.8;
+}
+
+.pop-up-question p {
+  color: #666666;
+}
+
+.pop-up-question .primary-button {
+  margin-bottom: 10px;
+}
+
+.pop-up-question .pop-up__confidential {
   margin: 0;
   font-size: 15px;
 }

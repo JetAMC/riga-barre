@@ -40,8 +40,6 @@ h1 {
     width: 100%;
     padding: 70px 10px;
     margin: 0 auto;
-    // border: 1px solid #fff;
-    // border: 1px solid #000;
 }
 
 .primary-button {
@@ -60,7 +58,7 @@ h1 {
     }
 }
 
-input:required, select:required {
+input:required, select:required, textarea:required {
     box-shadow: none;
 }
 
@@ -532,7 +530,7 @@ form {
     border: $defaultBorder;
     box-shadow: $defaultShadow;
     height: 100%;
-    input, select {
+    input, select, textarea {
         max-width: 350px;
         width: 100%;
         padding: 10px 0;
@@ -809,6 +807,7 @@ form {
     left: 0; 
     z-index: 1000;
 }
+
 .pop-up {
     max-width: 450px;
     position: fixed; 
@@ -836,10 +835,43 @@ form {
         margin-bottom: 10px;
         // width: 270px;
     }
+    .pop-up__confidential {
+        margin: 0;
+        font-size: 15px;
+    }
 }
-.pop-up__confidential {
-    margin: 0;
-    font-size: 15px;
+
+.pop-up-question {
+    max-width: 450px;
+    position: fixed; 
+    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+    text-align: center;
+    .close {
+        position: absolute; 
+        right: 0; 
+        margin-right: 12px;
+        font-size: 40px;
+        color: $darkColor;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    p {
+        color: #666666;
+    }
+    .primary-button {
+        margin-bottom: 10px;
+        // width: 270px;
+    }
+    .pop-up__confidential {
+        margin: 0;
+        font-size: 15px;
+    }
 }
 
 

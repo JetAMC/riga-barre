@@ -1,3 +1,6 @@
+<?php 
+include('../1ncludes/functions.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -411,7 +414,7 @@
                 </div>
                 <div class="footer__line"></div>
                 <div class="footer__button">
-                    <button class="primary-button">Задать вопрос</button>
+                    <button class="primary-button question-form">Задать вопрос</button>
                 </div>
             </div>
         </div>
@@ -441,6 +444,28 @@
             <i class="fas fa-angle-down"></i>
         </label>
         <input type="text" id="Editbox3" name="Editbox3" placeholder="Номер телефона" required>
+
+        <input type="hidden" id="Editbox4" name ="Editbox4" value ="<?php echo $utm_source; ?>">
+        <input type="hidden" id="Editbox5" name ="Editbox5" value ="<?php echo $utm_medium; ?>">
+        <input type="hidden" id="Editbox6" name ="Editbox6" value ="<?php echo $utm_campaign; ?>">
+        <input type="hidden" id="Editbox7" name ="Editbox7" value ="New order">
+        <button class="primary-button" type="submit" name="submit">Отправить</button>
+
+        <p class="pop-up__confidential">Гарантируем безопасность данных</p>
+    </form>
+</div>
+
+<!-- question pop up -->
+<div class="bg" style="display: none;">
+</div>
+<div class="pop-up-question" style="display: none;">
+    <span class="close">&times;</span>
+    <form action="order.php" method="POST">
+        <span class="form-title">Заполните форму</span>
+        <P>Наш консультант свяжется с вами в ближайшее время</P>
+        <input type="text" id="Editbox1" name="Editbox1" placeholder="Ваше Имя" required>
+        <input type="text" id="Editbox2" name="Editbox2" placeholder="Номер телефона" required>
+        <textarea id="Editbox3" name="Editbox3" placeholder="Напишите ваш вопрос" required></textarea>
 
         <input type="hidden" id="Editbox4" name ="Editbox4" value ="<?php echo $utm_source; ?>">
         <input type="hidden" id="Editbox5" name ="Editbox5" value ="<?php echo $utm_medium; ?>">

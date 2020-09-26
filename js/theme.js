@@ -25,9 +25,14 @@ $(".default-form").click( function() {
     $(".bg").fadeIn(500);
     $(".pop-up").fadeIn(500);
  });
+ $(".question-form").click( function() {
+    $(".bg").fadeIn(500);
+    $(".pop-up-question").fadeIn(500);
+ });
  $(".bg, .close").click( function() {
     $(".bg").fadeOut(400);
     $(".pop-up").fadeOut(400);
+    $(".pop-up-question").fadeOut(400);
  });
 
 
