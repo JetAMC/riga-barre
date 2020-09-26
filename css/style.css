@@ -38,7 +38,7 @@ h1 {
 .container {
   max-width: 1180px;
   width: 100%;
-  padding: 70px 0;
+  padding: 70px 10px;
   margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ input:required, select:required {
 }
 
 .header .container {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 
 .header__materials {
@@ -117,6 +117,106 @@ input:required, select:required {
 .header__menu a:hover {
   -webkit-box-shadow: 0 4px 0 #800080;
           box-shadow: 0 4px 0 #800080;
+}
+
+.header__mobile-menu {
+  display: none;
+}
+
+.header__mobile-menu span {
+  font-size: 30px;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.header__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__contacts {
+  margin-right: 50px;
 }
 
 .header__contacts a {
@@ -167,7 +267,7 @@ input:required, select:required {
 /*************************************** MAIN-SCREEN ***/
 .main-screen {
   height: 1000px;
-  background: url("../images/main-bg.jpg") no-repeat bottom;
+  background: url("../images/main-bg.jpg") no-repeat bottom #403c4a;
   background-size: cover;
   color: #fff;
 }
@@ -186,7 +286,7 @@ input:required, select:required {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 0;
+  padding: 25px 10px;
 }
 
 .main-screen h1 {
@@ -216,6 +316,7 @@ input:required, select:required {
   font-family: Lato-Bold, sans-serif;
   margin-bottom: 50px;
   font-size: 32px;
+  text-align: center;
 }
 
 .services__main-card {
@@ -302,6 +403,10 @@ input:required, select:required {
           box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
 }
 
+.services__barre-card {
+  margin-right: 10px;
+}
+
 .services__barre-image {
   background: url("../images/barre.png") no-repeat center;
   background-size: cover;
@@ -352,6 +457,7 @@ input:required, select:required {
 
 .cta__offer {
   margin-top: 170px;
+  margin-left: 10px;
 }
 
 .cta__title {
@@ -398,6 +504,7 @@ input:required, select:required {
   font-family: Lato-Bold, sans-serif;
   margin-bottom: 50px;
   font-size: 32px;
+  text-align: center;
 }
 
 .our-team__all {
@@ -430,6 +537,10 @@ input:required, select:required {
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
+}
+
+.our-team__first {
+  margin-right: 10px;
 }
 
 .our-team__first, .our-team__second {
@@ -507,6 +618,7 @@ input:required, select:required {
   font-family: Lato-Bold, sans-serif;
   font-size: 32px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .schedule__pricelist {
@@ -729,6 +841,22 @@ form .primary-button {
   background: url("../images/content_bg.png");
 }
 
+.benefits__all-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .benefits__title {
   text-align: center;
   font-family: Lato-Bold, sans-serif;
@@ -753,52 +881,75 @@ form .primary-button {
   margin-bottom: 10px;
 }
 
-.benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
-  max-width: 1200px;
-  width: 100%;
-  height: 450px;
-  position: relative;
-  margin-bottom: 100px;
-  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
-          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
-  margin-bottom: 40px;
-  border: 4px solid #800080;
+.benefits__first-area, .benefits__third-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 60px;
 }
 
-.benefits__help-div {
-  width: 60%;
-  height: 100%;
+.benefits__second-area, .benefits__fourth-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
+  max-width: 700px;
+  width: 100%;
+  height: 450px;
+  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+  border: 4px solid #800080;
 }
 
 .benefits__first {
-  background: url("../images/benefits-first.jpg") no-repeat top left;
-  background-size: 70%;
+  background: url("../images/benefits-first.jpg") no-repeat right;
+  background-size: cover;
 }
 
 .benefits__second {
-  background: url("../images/benefits-second.jpg") no-repeat right;
-  background-size: 70%;
+  background: url("../images/benefits-second.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .benefits__third {
-  background: url("../images/benefits-third.jpg") no-repeat left;
-  background-size: 70%;
+  background: url("../images/benefits-third.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .benefits__fourth {
-  background: url("../images/benefits-fourth.jpg") no-repeat bottom right;
-  background-size: 70%;
+  background: url("../images/benefits-fourth.jpg") no-repeat center;
+  background-size: cover;
 }
 
-.benefits__right-figure, .benefits__left-figure {
+.benefits__text-area {
   background: #fff;
-  width: 40%;
-  height: 100%;
-  bottom: 0;
-  right: 0;
+  max-width: 400px;
+  width: 100%;
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,23 +960,9 @@ form .primary-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
-}
-
-.benefits__right {
-  -webkit-clip-path: polygon(0% 101%, 100% 101%, 100% 0%, 20% 0%);
-          clip-path: polygon(0% 101%, 100% 101%, 100% 0%, 20% 0%);
-}
-
-.benefits__left {
-  -webkit-clip-path: polygon(0% 101%, 100% 101%, 80% 0%, 0% 0%);
-          clip-path: polygon(0% 101%, 100% 101%, 80% 0%, 0% 0%);
-}
-
-.benefits__text {
-  max-width: 370px;
-  width: 100%;
+  border: 1px solid #800080;
 }
 
 .benefits__text span {
@@ -839,26 +976,6 @@ form .primary-button {
   font-size: 40px;
   margin-bottom: 20px;
   color: #800080;
-}
-
-.benefits__text-left {
-  margin-left: -50px;
-}
-
-.benefits__text-right {
-  margin-left: 50px;
-}
-
-.benefits__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 /*************************************** GALLERY ***/
@@ -906,7 +1023,7 @@ form .primary-button {
 }
 
 .footer .container {
-  padding: 40px 0;
+  padding: 40px 10px;
 }
 
 .footer a {
@@ -1056,34 +1173,5 @@ form .primary-button {
 
 .thank-you__final-words h1 {
   font-size: 45px;
-}
-
-@media screen and (max-width: 1000px) {
-  .benefits__first {
-    max-width: 600px;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 550px;
-    background-size: cover;
-  }
-  .benefits__right-figure {
-    width: 100%;
-    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 9%, 0% 25%);
-            clip-path: polygon(0% 100%, 100% 100%, 100% 9%, 0% 25%);
-    height: 85%;
-  }
-  .test__text {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-  .benefits__help-div {
-    display: none;
-  }
 }
 /*# sourceMappingURL=style.css.map */

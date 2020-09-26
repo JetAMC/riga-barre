@@ -1,0 +1,10 @@
+$mainColor: #800080;
+$darkColor: #403c4a;
+$defaultShadow: 0 9px 34px rgba(31,29,38,0.8);
+$defaultBorder: 4px solid $mainColor;
+
+@mixin flexCenter ($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}

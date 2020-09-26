@@ -10,7 +10,15 @@ $(window).scroll(function(){
         $(".header").css({"position": "relative", "opacity": "1"});
         $(".header__logo img").css({"width": "200px"});
     }
+    // $(".schedule__form-area, .services__barre-image, .services__stretching-image, .cta__offer").each(function(i) {
+    //     const bottomObject = $(this).offset().top + $(this).outerHeight();
+    //     const bottomWindow = $(window).scrollTop() + $(window).height();
+    //     if (bottomWindow > bottomObject) {
+    //         $(this).animate({'opacity':'1'},500);
+    //     }
+    // });
 });
+
 
 /************** Pop up **************/
 $(".default-form").click( function() {
@@ -21,6 +29,20 @@ $(".default-form").click( function() {
     $(".bg").fadeOut(400);
     $(".pop-up").fadeOut(400);
  });
+
+
+ /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("header__menu").style.width = "100%";
+  }
+  
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("header__menu").style.width = "0%";
+  } 
+
+
+
 
 
 

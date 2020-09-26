@@ -1,0 +1,142 @@
+@import "variables";
+
+@media screen and (max-width: 1150px) {
+    .schedule__week {
+        div {
+            border-right: 0;
+            border-bottom: 1px solid $mainColor;
+            width: 90%;
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+        flex-direction: column;
+    }
+    .cta__figure {
+        height: 75%;
+    }
+    .benefits__first-area, .benefits__second-area, .benefits__third-area, .benefits__fourth-area {
+        flex-direction: column;
+    }
+    .benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1059px) {
+    .services__barre-card {
+        margin-bottom: 60px;
+        margin-right: 0;
+    }
+    .schedule__pricelist {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .schedule__left-side {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1019px) {
+    .our-team__first {
+        margin-bottom: 60px;
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .header__menu {
+        display: none;
+    }
+    .header__materials { 
+        @include flexCenter(center, space-between);
+    }
+    .cta__figure {
+        height: 55%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__company, .footer__contact {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .footer__ask {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-screen {
+        height: 650px;
+        background-size: 100%;
+    }
+    .main-screen__container {
+        background-color: $darkColor;
+    }
+    .cta__figure {
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header__right-side {
+        display: none;
+    }
+    .header__mobile-menu {
+        display: block;
+    }
+    .services__stretching-square, .services__barre-square, .our-team__square, .our-team__second-square {
+        display: none;
+    }
+    .main-screen {
+        h1 {
+            font-size: 35px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .schedule__title, .services__title, .benefits__title, .our-team__title, .gallery__title {
+        span {
+            font-size: 28px;
+        }
+    }
+    .schedule__price {
+        font-size: 20px !important;
+    }
+
+    .schedule__single {
+        i {
+            font-size: 18px;
+        }
+    }
+    .schedule__small-title {
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .main-screen {
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .schedule__private, .schedule__single {
+        flex-direction: column;
+    }
+    .schedule__title, .services__title, .benefits__title, .our-team__title, .gallery__title {
+        span {
+            font-size: 25px;
+        }
+    }
+}

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/simple-lightbox.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <script src="https://kit.fontawesome.com/b60c7bcec8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -33,12 +34,25 @@
                         <a href="#main_gal">Галерея</a>
                     </div>
                 </div>
-                <div class="header__contacts">
-                    <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
+                <div class="header__mobile-menu">
+                    <div id="header__menu" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="tel:+37122222222"><i class="fas fa-phone-square-alt"></i>22222222</a>
+                            <a class="active" href="index.php">LV</a>
+                            <a href="ru.php">RU</a>
+                        </div>
+                    </div>
+                    <span onclick="openNav()"><i class="fas fa-bars"></i></span>
                 </div>
-                <div class="header__language">
-                    <a class="active" href="index.php">LV</a>
-                    <a href="ru.php">RU</a>
+                <div class="header__right-side">
+                    <div class="header__contacts">
+                        <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
+                    </div>
+                    <div class="header__language">
+                        <a class="active" href="index.php">LV</a>
+                        <a href="ru.php">RU</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,12 +154,12 @@
                 </div>
                 <div class="schedule__right-side">
                     <div class="schedule__form-area" id="single-form">
-                        <form>
+                        <form action="order.php" method="POST">
                             <span class="form-title">Заполните форму</span>
                             <P>Наш консультант свяжется с вами в ближайшее время</P>
-                            <input type="text" placeholder="Ваше Имя" required>
+                            <input type="text" name="Editbox1" id="Editbox1" placeholder="Ваше Имя" required>
                             <label class="custom-select">
-                                <select id="main" required>
+                                <select id="main" name="Editbox2" required>
                                     <option value="" selected>Выберете занятие</option>
                                     <option value="Single training">1 занятие: Barre 7 €, Stretching 10 €</option>
                                     <option value="Four trainings">4 занятия: 30 €</option>
@@ -155,21 +169,16 @@
                                 </select>
                                 <i class="fas fa-angle-down"></i>
                             </label>
-                            <input type="text" placeholder="Номер телефона" required>
-                            <button class="primary-button">Отправить</button>
+                            <input type="text" name="Editbox3" id="Editbox3" placeholder="Номер телефона" required>
+
+                            <input type="hidden" id="Editbox4" name ="Editbox4" value ="<?php echo $utm_source; ?>">
+                            <input type="hidden" id="Editbox5" name ="Editbox5" value ="<?php echo $utm_medium; ?>">
+                            <input type="hidden" id="Editbox6" name ="Editbox6" value ="<?php echo $utm_campaign; ?>">
+                            <input type="hidden" id="Editbox7" name ="Editbox7" value ="New order">
+
+                            <button type="submit" name="submit" class="primary-button">Отправить</button>
                         </form>
                     </div>
-                    <!-- <div class="schedule__form-area" id="four-form">
-                        four
-                    </div>
-                    <div class="schedule__form-area" id="eight-form">
-                    </div>
-                    <div class="schedule__form-area" id="twelve-form">
-                        twelve
-                    </div>
-                    <div class="schedule__form-area" id="private-form">
-                        private
-                    </div> -->
                 </div>
             </div>
             <div class="schedule__week">
@@ -235,47 +244,50 @@
                 <span>Почему каждой девушке стоит придти к нам на занятие</span>
             </div>
             <div class="benefits__all-items">
-                <div class="benefits__first">
-                    <div class="benefits__help-div"></div>
-                    <div class="benefits__right-figure benefits__right">
-                        <div class="benefits__text benefits__text-right">
+                <div class="benefits__first-area">
+                    <div class="benefits__first">
+                    </div>
+                    <div class="benefits__text-area">
+                        <div class="benefits__text">
                             <span>Riga Barre - это волшебное место</span>
                             <i class="fas fa-star"></i>
                             <p>В нашей студии каждая женщина уделяет время себе любимой. Опытные педагоги превращают тренировки в удовольствие и приглашают наслаждаться процессом!</p>
                         </div>
                     </div>
                 </div>
-                <div class="benefits__second">
-                    <div class="benefits__left-figure benefits__left">
-                        <div class="benefits__text benefits__text-left">
+                <div class="benefits__second-area">
+                    <div class="benefits__second">
+                    </div>
+                    <div class="benefits__text-area">
+                        <div class="benefits__text">
                             <span>Занятия снимают стресс и напряжение</span>
                             <i class="fas fa-heartbeat"></i>
                             <p>Современные тренировки Stretching и Barre убирают мышечные зажимы, омолаживают организм, а также расслабляют нервную систему. Уже в первые дни вы почувствуете результат</p>
                         </div>
                     </div>
                 </div>
-                <div class="benefits__third">
-                    <div class="benefits__help-div"></div>
-                    <div class="benefits__right-figure benefits__right">
-                        <div class="benefits__text benefits__text-right">
-                            <span>Обретете новое хобби, почувствуете себя живой и счастливой</span>
+                <div class="benefits__third-area">
+                    <div class="benefits__third">
+                    </div>
+                    <div class="benefits__text-area">
+                        <div class="benefits__text">
+                            <span>Обретете новое хобби, почувствуете себя живой</span>
                             <i class="fas fa-dove"></i>
                             <p>Не бойтесь пробовать новый вид занятий, это помогает вам развиваться физически и духовно. Занятия которые приносят удовольствие также наполняют вашу жизнь радостью, вы почувствуете приток энергии и будете в восторге</p>
                         </div>
                     </div>
                 </div>
-                <div class="benefits__fourth">
-                    <div class="benefits__left-figure benefits__left">
-                        <div class="benefits__text benefits__text-left">
+                <div class="benefits__fourth-area">
+                    <div class="benefits__fourth">
+                    </div>
+                    <div class="benefits__text-area">
+                        <div class="benefits__text">
                             <span>Простой способ обрести чудесную фигуру</span>
                             <i class="fab fa-envira"></i>
                             <p>Наши педагоги создают тренировки где для обретения прекрасного тела вовсе не нужно таскать железо. У вас есть возможность создать чудесную форму выполняя эстетически красивые, женственные упражнения. Быть женщиной - главная цель для нас!</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="benefits__button">
-                    <button class="primary-button">Записаться на занятие</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -416,9 +428,9 @@
     <form action="order.php" method="POST">
         <span class="form-title">Заполните форму</span>
         <P>Наш консультант свяжется с вами в ближайшее время</P>
-        <input type="text" placeholder="Ваше Имя" required>
+        <input type="text" id="Editbox1" name="Editbox1" placeholder="Ваше Имя" required>
         <label class="custom-select">
-            <select id="main" required>
+            <select id="main" name="Editbox2" required>
                 <option value="" selected>Выберете занятие</option>
                 <option value="Single training">1 занятие: Barre 7 €, Stretching 10 €</option>
                 <option value="Four trainings">4 занятия: 30 €</option>
@@ -428,8 +440,14 @@
             </select>
             <i class="fas fa-angle-down"></i>
         </label>
-        <input type="text" placeholder="Номер телефона" required>
-        <button class="primary-button" type="submit">Отправить</button>
+        <input type="text" id="Editbox3" name="Editbox3" placeholder="Номер телефона" required>
+
+        <input type="hidden" id="Editbox4" name ="Editbox4" value ="<?php echo $utm_source; ?>">
+        <input type="hidden" id="Editbox5" name ="Editbox5" value ="<?php echo $utm_medium; ?>">
+        <input type="hidden" id="Editbox6" name ="Editbox6" value ="<?php echo $utm_campaign; ?>">
+        <input type="hidden" id="Editbox7" name ="Editbox7" value ="New order">
+        <button class="primary-button" type="submit" name="submit">Отправить</button>
+
         <p class="pop-up__confidential">Гарантируем безопасность данных</p>
     </form>
 </div>
