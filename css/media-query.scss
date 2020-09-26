@@ -19,7 +19,7 @@
         flex-direction: column;
     }
     .benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
 
@@ -81,6 +81,9 @@
     .cta__figure {
         height: 45%;
     }
+    #buttonTop {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -120,6 +123,14 @@
             font-size: 16px;
         }
     }
+    .gallery__first-line, .gallery__next-line {
+        flex-direction: column;
+        @include flexCenter(center, center);
+        img {
+            width: 100%;
+            margin-top: -5px;
+        }
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -138,5 +149,8 @@
         span {
             font-size: 25px;
         }
+    }
+    .cta__figure {
+        height: 37%;
     }
 }
