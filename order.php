@@ -1,5 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
+include('1ncludes/functions.php');
 
 session_start();
 
