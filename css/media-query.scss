@@ -73,10 +73,6 @@
 @media screen and (max-width: 700px) {
     .main-screen {
         height: 650px;
-        background-size: 100%;
-    }
-    .main-screen__container {
-        background-color: $darkColor;
     }
     .cta__figure {
         height: 45%;
@@ -87,6 +83,9 @@
 }
 
 @media screen and (max-width: 550px) {
+    .main-screen {
+        height: 550px;
+    }
     .header__right-side {
         display: none;
     }
@@ -135,12 +134,17 @@
 
 @media screen and (max-width: 440px) {
     .main-screen {
+        height: 450px;
         h1 {
             font-size: 30px;
         }
         h2 {
             font-size: 20px;
         }
+    }
+    .main-screen__title {
+        background: rgba(0,0,0, 0.5);
+        padding: 10px;
     }
     .schedule__private, .schedule__single {
         flex-direction: column;

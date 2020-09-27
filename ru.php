@@ -53,8 +53,8 @@ include('../1ncludes/functions.php');
                         <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
                     </div>
                     <div class="header__language">
-                        <a class="active" href="index.html">LV</a>
-                        <a href="ru.php">RU</a>
+                        <a href="index.html">LV</a>
+                        <a class="active" href="ru.php">RU</a>
                     </div>
                 </div>
             </div>
