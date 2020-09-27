@@ -16,7 +16,7 @@ $produkt = isset($_POST["Editbox7"]) ? $_POST["Editbox7"] : "";
         
 
 // Sending
-mail('info@rigabarre.lv', 'Заявка с Landing Page LV', $name . "\n" . $kod . "\n" . $email . "\n" . $source . "\n" . $medium . "\n" . $campaign . "\n" . $produkt);
+mail('info@rigabarre.lv', 'Заявка с Landing Page RU', $name . "\n" . $kod . "\n" . $email . "\n" . $source . "\n" . $medium . "\n" . $campaign . "\n" . $produkt);
 ?>
 <head>
     <meta charset="UTF-8">
