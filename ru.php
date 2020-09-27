@@ -1,12 +1,12 @@
 <?php 
-include('../1ncludes/functions.php');
+include('1ncludes/functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Riga Barre - Barre и Stretching студия</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/simple-lightbox.css">
     <link rel="stylesheet" href="css/media-query.css">
@@ -41,9 +41,9 @@ include('../1ncludes/functions.php');
                     <div id="header__menu" class="overlay">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
-                            <a href="tel:+37122222222"><i class="fas fa-phone-square-alt"></i>22222222</a>
-                            <a class="active" href="index.php">LV</a>
-                            <a href="ru.php">RU</a>
+                            <a href="tel:+37122222222">+37122222222</a>
+                            <a href="index.php">LV</a>
+                            <a class="active" href="ru.php">RU</a>
                         </div>
                     </div>
                     <span onclick="openNav()"><i class="fas fa-bars"></i></span>
@@ -53,7 +53,7 @@ include('../1ncludes/functions.php');
                         <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
                     </div>
                     <div class="header__language">
-                        <a href="index.html">LV</a>
+                        <a href="index.php">LV</a>
                         <a class="active" href="ru.php">RU</a>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ include('../1ncludes/functions.php');
                 </div>
                 <div class="schedule__right-side">
                     <div class="schedule__form-area" id="single-form">
-                        <form action="order.php" method="POST">
+                        <form action="order_ru.php" method="POST">
                             <span class="form-title">Заполните форму</span>
                             <P>Наш консультант свяжется с вами в ближайшее время</P>
                             <input type="text" name="Editbox1" id="Editbox1" placeholder="Ваше Имя" required>
@@ -428,7 +428,7 @@ include('../1ncludes/functions.php');
 </div>
 <div class="pop-up" style="display: none;">
     <span class="close">&times;</span>
-    <form action="order.php" method="POST">
+    <form action="order_ru.php" method="POST">
         <span class="form-title">Заполните форму</span>
         <P>Наш консультант свяжется с вами в ближайшее время</P>
         <input type="text" id="Editbox1" name="Editbox1" placeholder="Ваше Имя" required>
@@ -460,7 +460,7 @@ include('../1ncludes/functions.php');
 </div>
 <div class="pop-up-question" style="display: none;">
     <span class="close">&times;</span>
-    <form action="order.php" method="POST">
+    <form action="order_ru.php" method="POST">
         <span class="form-title">Заполните форму</span>
         <P>Наш консультант свяжется с вами в ближайшее время</P>
         <input type="text" id="Editbox1" name="Editbox1" placeholder="Ваше Имя" required>
@@ -470,7 +470,7 @@ include('../1ncludes/functions.php');
         <input type="hidden" id="Editbox4" name ="Editbox4" value ="<?php echo $utm_source; ?>">
         <input type="hidden" id="Editbox5" name ="Editbox5" value ="<?php echo $utm_medium; ?>">
         <input type="hidden" id="Editbox6" name ="Editbox6" value ="<?php echo $utm_campaign; ?>">
-        <input type="hidden" id="Editbox7" name ="Editbox7" value ="New order">
+        <input type="hidden" id="Editbox7" name ="Editbox7" value ="Question">
         <button class="primary-button" type="submit" name="submit">Отправить</button>
 
         <p class="pop-up__confidential">Гарантируем безопасность данных</p>

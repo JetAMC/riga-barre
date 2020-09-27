@@ -1,12 +1,12 @@
 <?php 
-include('../1ncludes/functions.php');
+include('1ncludes/functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Riga Barre - Barre un Stretching studija</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/simple-lightbox.css">
     <link rel="stylesheet" href="css/media-query.css">
@@ -53,7 +53,7 @@ include('../1ncludes/functions.php');
                         <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
                     </div>
                     <div class="header__language">
-                        <a class="active" href="index.html">LV</a>
+                        <a class="active" href="index.php">LV</a>
                         <a href="ru.php">RU</a>
                     </div>
                 </div>
@@ -470,7 +470,7 @@ include('../1ncludes/functions.php');
         <input type="hidden" id="Editbox4" name ="Editbox4" value ="<?php echo $utm_source; ?>">
         <input type="hidden" id="Editbox5" name ="Editbox5" value ="<?php echo $utm_medium; ?>">
         <input type="hidden" id="Editbox6" name ="Editbox6" value ="<?php echo $utm_campaign; ?>">
-        <input type="hidden" id="Editbox7" name ="Editbox7" value ="New order">
+        <input type="hidden" id="Editbox7" name ="Editbox7" value ="Question">
         <button class="primary-button" type="submit" name="submit">Отправить</button>
 
         <p class="pop-up__confidential">Гарантируем безопасность данных</p>

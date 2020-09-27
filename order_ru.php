@@ -21,7 +21,7 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page LV', $name . "\n" . $kod
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riga Barre - Barre un Stretching studija</title>
+    <title>Riga Barre - Barre и Stretching студия</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/simple-lightbox.css">
     <link rel="stylesheet" href="css/media-query.css">
@@ -62,10 +62,10 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page LV', $name . "\n" . $kod
 	<div class="thank-you__container container">
 		<div class="thank-you__text-area">
 			<div class="thank-you__final-words">
-				<h1>Paldies par pieteikumu!</h1>
+				<h1>Спасибо за заявку!</h1>
 			</div>
 			<div class="thank-you__small-text">
-				<p>Mēs ar Jums sazināsimies tuvākajā laikā.</p>
+				<p>Мы с вами свяжемся в ближайшее время.</p>
 			</div>
 		</div>
 	</div>
@@ -120,7 +120,7 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page LV', $name . "\n" . $kod
 </div>
 <div class="pop-up-question" style="display: none;">
     <span class="close">&times;</span>
-    <form action="order.php" method="POST">
+    <form action="order_ru.php" method="POST">
         <span class="form-title">Заполните форму</span>
         <P>Наш консультант свяжется с вами в ближайшее время</P>
         <input type="text" id="Editbox1" name="Editbox1" placeholder="Ваше Имя" required>
