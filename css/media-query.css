@@ -22,9 +22,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
-    margin-bottom: 20px;
-  }
 }
 
 @media screen and (max-width: 1059px) {
@@ -178,6 +175,9 @@
   }
   .cta__figure {
     height: 37%;
+  }
+  form p {
+    display: none;
   }
 }
 /*# sourceMappingURL=media-query.css.map */

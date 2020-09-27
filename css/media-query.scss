@@ -18,9 +18,6 @@
     .benefits__first-area, .benefits__second-area, .benefits__third-area, .benefits__fourth-area {
         flex-direction: column;
     }
-    .benefits__first, .benefits__second, .benefits__third, .benefits__fourth {
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (max-width: 1059px) {
@@ -156,5 +153,8 @@
     }
     .cta__figure {
         height: 37%;
+    }
+    form p {
+        display: none;
     }
 }
