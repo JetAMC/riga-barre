@@ -55,7 +55,7 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page RU', $name . "\n" . $kod
                     <div id="header__menu" class="overlay">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
-                            <a href="tel:+37122222222">+37122222222</a>
+                            <a href="mailto:info@rigabarre.lv">info@rigabarre.lv</a>
                             <a class="active language" href="index.php">LV</a>
                             <a class="language" href="ru.php">RU</a>
                         </div>
@@ -64,7 +64,7 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page RU', $name . "\n" . $kod
                 </div>
                 <div class="header__right-side">
                     <div class="header__contacts">
-                        <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
+                        <p><i class="fas fa-at"></i><a href="mailto:info@rigabarre.lv">info@rigabarre.lv</a></p>
                     </div>
                     <div class="header__language">
                         <a class="active" href="index.php">LV</a>
@@ -107,10 +107,6 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page RU', $name . "\n" . $kod
                     <span>Контакты</span>
                 </div>
                 <div class="footer__line"></div>
-                <div class="footer__phone">
-                    <p class="footer__icon"><i class="fas fa-phone-square-alt"></i></p>
-                    <a href="tel:+37122222222" class="footer__text">22222222</a>
-                </div>
                 <div class="footer__email">
                     <p class="footer__icon"><i class="fas fa-at"></i></p>
                     <a href="mailto:info@rigabarre.lv" class="footer__text">info@rigabarre.lv</a>
