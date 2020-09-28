@@ -10,6 +10,7 @@ include('1ncludes/functions.php');
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/simple-lightbox.css">
     <link rel="stylesheet" href="css/media-query.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/b60c7bcec8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -41,7 +42,7 @@ include('1ncludes/functions.php');
                     <div id="header__menu" class="overlay">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
-                            <a href="tel:+37122222222">+37122222222</a>
+                            <a href="mailto:info@rigabarre.lv">info@rigabarre.lv</a>
                             <a class="active language" href="index.php">LV</a>
                             <a class="language" href="ru.php">RU</a>
                         </div>
@@ -50,7 +51,7 @@ include('1ncludes/functions.php');
                 </div>
                 <div class="header__right-side">
                     <div class="header__contacts">
-                        <p><i class="fas fa-phone-square-alt"></i><a href="tel:+37122222222">22222222</a></p>
+                        <p><i class="fas fa-at"></i><a href="mailto:info@rigabarre.lv">info@rigabarre.lv</a></p>
                     </div>
                     <div class="header__language">
                         <a class="active" href="index.php">LV</a>
@@ -196,7 +197,7 @@ include('1ncludes/functions.php');
                     <span class="schedule__week-title">Вторник</span>
                     <i class="fas fa-calendar-alt"></i>
                     <p class="schedule__week-text">Barre 12:00 - 13:00</p>
-                    <p class="schedule__week-text">Stretching 19:30 - 20:30</p>
+                    <p class="schedule__week-text">Stretching 20:00 - 21:00</p>
                     <i class="fas fa-map-pin"></i>
                     <p class="schedule__week-address">Ieriķu iela 15</p>
                 </div>
@@ -210,7 +211,7 @@ include('1ncludes/functions.php');
                 <div class="schedule__thursday">
                     <span class="schedule__week-title">Четверг</span>
                     <i class="fas fa-calendar-alt"></i>
-                    <p class="schedule__week-text">Stretching <br>19:30 - 20:30</p>
+                    <p class="schedule__week-text">Stretching <br>20:00 - 21:00</p>
                     <i class="fas fa-map-pin"></i>
                     <p class="schedule__week-address">Ieriķu iela 15</p>
                 </div>
@@ -395,10 +396,10 @@ include('1ncludes/functions.php');
                     <span>Контакты</span>
                 </div>
                 <div class="footer__line"></div>
-                <div class="footer__phone">
+                <!-- <div class="footer__phone">
                     <p class="footer__icon"><i class="fas fa-phone-square-alt"></i></p>
                     <a href="tel:+37122222222" class="footer__text">22222222</a>
-                </div>
+                </div> -->
                 <div class="footer__email">
                     <p class="footer__icon"><i class="fas fa-at"></i></p>
                     <a href="mailto:info@rigabarre.lv" class="footer__text">info@rigabarre.lv</a>

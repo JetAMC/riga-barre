@@ -455,150 +455,6 @@ input:required, select:required, textarea:required {
   background: #555063;
 }
 
-.cta__offer {
-  margin-top: 170px;
-  margin-left: 10px;
-}
-
-.cta__title {
-  font-family: Lato-Bold, sans-serif;
-  font-size: 32px;
-  margin-bottom: 20px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.cta__description {
-  margin-bottom: 20px;
-  max-width: 650px;
-  width: 100%;
-}
-
-.cta__figure {
-  -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 85.65% 100%);
-          clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 85.65% 100%);
-  background: url("../images/pexels-andrea-piacquadio-868757.jpg") no-repeat bottom;
-  background-size: cover;
-  width: 100%;
-  height: 90%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-/*************************************** OUR TEAM ***/
-.our-team {
-  background: #fff;
-}
-
-.our-team__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: Lato-Bold, sans-serif;
-  margin-bottom: 50px;
-  font-size: 32px;
-  text-align: center;
-}
-
-.our-team__all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.our-team__all img {
-  max-width: 500px;
-  width: 100%;
-  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
-          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
-}
-
-.our-team__line {
-  border-top: 4px solid #800080;
-  width: 50px;
-  margin-bottom: 15px;
-}
-
-.our-team__image {
-  margin-bottom: 40px;
-  position: relative;
-  z-index: 2;
-}
-
-.our-team__first {
-  margin-right: 10px;
-}
-
-.our-team__first, .our-team__second {
-  max-width: 500px;
-  width: 100%;
-}
-
-.our-team__info {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.our-team__info div {
-  margin-bottom: 15px;
-}
-
-.our-team__info span {
-  font-family: Lato-Bold, sans-serif;
-  font-size: 28px;
-  display: block;
-}
-
-.our-team__info i {
-  color: #800080;
-  font-size: 50px;
-}
-
-.our-team__square {
-  width: 80px;
-  height: 150px;
-  border: 4px solid #800080;
-  position: absolute;
-  margin-left: -40px;
-  margin-top: 70px;
-  z-index: 1;
-}
-
-.our-team__second-square {
-  width: 100px;
-  height: 120px;
-  background: #800080;
-  position: absolute;
-  margin-left: 430px;
-  margin-top: 410px;
-}
-
 /*************************************** SCHEDULE ***/
 .schedule {
   background: url("../images/content_bg.png");
@@ -734,6 +590,7 @@ form input, form select, form textarea {
   border: 0;
   border-bottom: 1px solid #403c4a;
   font-family: Lato-Light, sans-serif;
+  border-radius: 0;
 }
 
 form label.custom-select {
@@ -834,6 +691,37 @@ form .primary-button {
   font-size: 35px;
   margin-bottom: 5px;
   margin-top: 25px;
+}
+
+.cta__offer {
+  margin-top: 170px;
+  margin-left: 10px;
+}
+
+.cta__title {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.cta__description {
+  margin-bottom: 20px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.cta__figure {
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 85.65% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 85.65% 100%);
+  background: url("../images/pexels-andrea-piacquadio-868757.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 /*************************************** BENEFITS ***/
@@ -978,6 +866,119 @@ form .primary-button {
   font-size: 40px;
   margin-bottom: 20px;
   color: #800080;
+}
+
+/*************************************** OUR TEAM ***/
+.our-team {
+  background: #fff;
+}
+
+.our-team__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Lato-Bold, sans-serif;
+  margin-bottom: 50px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.our-team__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our-team__all img {
+  max-width: 500px;
+  width: 100%;
+  -webkit-box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+          box-shadow: 0 9px 34px rgba(31, 29, 38, 0.8);
+}
+
+.our-team__line {
+  border-top: 4px solid #800080;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.our-team__image {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.our-team__first {
+  margin-right: 10px;
+}
+
+.our-team__first, .our-team__second {
+  max-width: 500px;
+  width: 100%;
+}
+
+.our-team__info {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our-team__info div {
+  margin-bottom: 15px;
+}
+
+.our-team__info span {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 28px;
+  display: block;
+}
+
+.our-team__info i {
+  color: #800080;
+  font-size: 50px;
+}
+
+.our-team__square {
+  width: 80px;
+  height: 150px;
+  border: 4px solid #800080;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.our-team__second-square {
+  width: 100px;
+  height: 120px;
+  background: #800080;
+  position: absolute;
+  margin-left: 430px;
+  margin-top: 410px;
 }
 
 /*************************************** GALLERY ***/
@@ -1154,6 +1155,7 @@ form .primary-button {
 }
 
 .pop-up-question {
+  width: 90%;
   max-width: 450px;
   position: fixed;
   top: 0;

@@ -63,6 +63,7 @@ input:required, select:required, textarea:required {
 }
 
 /*************************************** HEADER ***/
+
 .header {
     background: #060709;
     color: #fff;
@@ -191,6 +192,7 @@ input:required, select:required, textarea:required {
 }
 
 /*************************************** MAIN-SCREEN ***/
+
 .main-screen {
     height: 1000px;
     background: url('../images/main-bg.jpg') no-repeat bottom $darkColor;
@@ -215,6 +217,7 @@ input:required, select:required, textarea:required {
 }
 
 /*************************************** SERVICES ***/
+
 .services__title {
     @include flexCenter(center, center);
     font-family: Lato-Bold, sans-serif;
@@ -234,8 +237,6 @@ input:required, select:required, textarea:required {
     span {
         font-family: Lato-Bold, sans-serif;
         margin-bottom: 15px;
-        // box-shadow: 0 4px 0 $mainColor;
-        // line-height: 40px;
     }
     p {
         font-size: 20px;
@@ -291,7 +292,6 @@ input:required, select:required, textarea:required {
     margin-bottom: 40px;
     z-index: 2;
     box-shadow: $defaultShadow;
-    // opacity: 0;
 }
 
 .services__barre-card {
@@ -321,6 +321,7 @@ input:required, select:required, textarea:required {
 }
 
 /*************************************** CTA ***/
+
 .cta {
     background: $mainColor;
     color: #fff;
@@ -333,119 +334,8 @@ input:required, select:required, textarea:required {
     }
 }
 
-.cta__offer {
-    margin-top: 170px;
-    margin-left: 10px;
-    // opacity: 0;
-}
-
-.cta__title {
-    font-family: Lato-Bold, sans-serif;
-    font-size: 32px;
-    margin-bottom: 20px;
-    max-width: 500px;
-    width: 100%;
-}
-
-.cta__description {
-    margin-bottom: 20px;
-    max-width: 650px;
-    width: 100%;
-}
-
-.cta__figure {
-    clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 85.65% 100%);
-    background: url('../images/pexels-andrea-piacquadio-868757.jpg') no-repeat bottom;
-    background-size: cover;
-    width: 100%;
-    height: 90%;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-/*************************************** OUR TEAM ***/
-.our-team {
-    // height: 550px;
-    background: #fff;
-}
-
-.our-team__title {
-    @include flexCenter(center, center);
-    font-family: Lato-Bold, sans-serif;
-    margin-bottom: 50px;
-    font-size: 32px;
-    text-align: center;
-}
-
-.our-team__all {
-    @include flexCenter(center, space-around);
-    flex-wrap: wrap;
-    img {
-        max-width: 500px;
-        width: 100%;
-        box-shadow: $defaultShadow;
-    }
-}
-
-.our-team__line {
-    border-top: $defaultBorder;
-    width: 50px;
-    margin-bottom: 15px;
-}
-
-.our-team__image {
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 2;
-}
-
-.our-team__first {
-    margin-right: 10px;
-}
-
-.our-team__first, .our-team__second {
-    max-width: 500px;
-    width: 100%;
-}
-.our-team__info {
-    text-align: center;
-    @include flexCenter(center, center);
-    flex-direction: column;
-    div {
-        margin-bottom: 15px;
-    }
-    span {
-        font-family: Lato-Bold, sans-serif;
-        font-size: 28px;
-        // margin-bottom: 15px;
-        display: block;
-    }
-    i {
-        color: $mainColor;
-        font-size: 50px;
-    }
-}
-
-.our-team__square {
-    width: 80px;
-    height: 150px;
-    border: $defaultBorder;
-    position: absolute;
-    margin-left: -40px;
-    margin-top: 70px;
-    z-index: 1;
-}
-
-.our-team__second-square {
-    width: 100px;
-    height: 120px;
-    background: $mainColor;
-    position: absolute;
-    margin-left: 430px;
-    margin-top: 410px;
-}
-
 /*************************************** SCHEDULE ***/
+
 .schedule {
     background: url('../images/content_bg.png');
     position: relative;
@@ -462,7 +352,6 @@ input:required, select:required, textarea:required {
 .schedule__pricelist {
     @include flexCenter(center, space-around);
     flex-direction: row;
-    // flex-wrap: wrap;
     margin-bottom: 60px;
 }
 
@@ -476,19 +365,12 @@ input:required, select:required, textarea:required {
     width: 100%;
 }
 
-.schedule__form-area {
-    // opacity: 0;
-}
-
 .schedule__single, .schedule__four, .schedule__eight, .schedule__twelve, .schedule__private {
     @include flexCenter(center, space-between);
-    // border: 1px solid $darkColor;
     background: #fff;
     width: 100%;
     padding: 15px 10px;
-    // height: 55px;
     margin-bottom: 20px;
-    // cursor: pointer;
     &:last-child {
         margin-bottom: 0;
     }
@@ -508,18 +390,6 @@ input:required, select:required, textarea:required {
         padding: 7px;
     }
 }
-// .schedule__active {
-//     box-shadow: 0 4px 0 $mainColor;
-//     background: #fff;
-// }
-
-// #single-form, #four-form, #twelve-form, #private-form {
-//     display: none;
-// }
-
-// #single-form {
-//     display: block;
-// }
 
 form {
     @include flexCenter(center, center);
@@ -589,7 +459,6 @@ form {
         width: 100%;
         border-right: 1px solid $darkColor;
         height: 300px;
-        // background: #fafafa;
         @include flexCenter(center, center);
         flex-direction: column;
         padding: 5px;
@@ -614,7 +483,38 @@ form {
     }
 }
 
+.cta__offer {
+    margin-top: 170px;
+    margin-left: 10px;
+}
+
+.cta__title {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.cta__description {
+    margin-bottom: 20px;
+    max-width: 650px;
+    width: 100%;
+}
+
+.cta__figure {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 85.65% 100%);
+    background: url('../images/pexels-andrea-piacquadio-868757.jpg') no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 /*************************************** BENEFITS ***/
+
 .benefits {
     background: url('../images/content_bg.png');
 }
@@ -704,7 +604,89 @@ form {
     }
 }
 
+/*************************************** OUR TEAM ***/
+
+.our-team {
+    background: #fff;
+}
+
+.our-team__title {
+    @include flexCenter(center, center);
+    font-family: Lato-Bold, sans-serif;
+    margin-bottom: 50px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.our-team__all {
+    @include flexCenter(center, space-around);
+    flex-wrap: wrap;
+    img {
+        max-width: 500px;
+        width: 100%;
+        box-shadow: $defaultShadow;
+    }
+}
+
+.our-team__line {
+    border-top: $defaultBorder;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.our-team__image {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.our-team__first {
+    margin-right: 10px;
+}
+
+.our-team__first, .our-team__second {
+    max-width: 500px;
+    width: 100%;
+}
+.our-team__info {
+    text-align: center;
+    @include flexCenter(center, center);
+    flex-direction: column;
+    div {
+        margin-bottom: 15px;
+    }
+    span {
+        font-family: Lato-Bold, sans-serif;
+        font-size: 28px;
+        display: block;
+    }
+    i {
+        color: $mainColor;
+        font-size: 50px;
+    }
+}
+
+.our-team__square {
+    width: 80px;
+    height: 150px;
+    border: $defaultBorder;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.our-team__second-square {
+    width: 100px;
+    height: 120px;
+    background: $mainColor;
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 410px;
+}
+
 /*************************************** GALLERY ***/
+
 .gallery {
     background: url('../images/content_bg.png');
 }
@@ -722,7 +704,6 @@ form {
     z-index: 2;
     img {
         width: 33%;
-        // height: 100%;
         transition: transform .2s; /* Animation */
         &:hover {
             transform: scale(1.05);
@@ -736,6 +717,7 @@ form {
 }
 
 /*************************************** FOOTER ***/
+
 .footer {
     background: #060709;
     color: #fff;
@@ -778,7 +760,9 @@ form {
     font-size: 30px;
     margin-right: 7px;
 }
+
 /*************************************** BUTTON TOP ***/
+
 #buttonTop {
     text-align: center;
     display: none;
@@ -796,9 +780,8 @@ form {
     border-radius: 50%;
 }
 
-
-
 /********************************************** POP UP *****/
+
 .bg {
     width: 100%; 
     height: 100%; 
@@ -844,6 +827,7 @@ form {
 }
 
 .pop-up-question {
+    width: 90%;
     max-width: 450px;
     position: fixed; 
     top: 0;
@@ -876,8 +860,8 @@ form {
     }
 }
 
-
 /********************************************** THANK YOU *****/
+
 .thank-you {
     height: 550px;
     background: url('../images/main-bg.jpg') no-repeat center;
