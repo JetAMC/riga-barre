@@ -11,8 +11,6 @@ include('1ncludes/functions.php');
     <link rel="stylesheet" href="css/simple-lightbox.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/b60c7bcec8.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -478,14 +476,58 @@ include('1ncludes/functions.php');
     </form>
 </div>
 
+<!-- Loading additional files -->
+<link href="https://kit.fontawesome.com/b60c7bcec8.js" rel="preload" as="script">
+<script src="https://kit.fontawesome.com/b60c7bcec8.js" ></script>
+<link href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" rel="preload" as="script">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+<link href="js/simple-lightbox.js" rel="preload" as="script">
+<script src="js/simple-lightbox.js" ></script>
+<!-- Loading additional files -->
 
-<script src="js/theme.js"></script>
-<script src="js/simple-lightbox.js"></script>
 <script>
+    /************** Gallery **************/
     var bigGallery = new SimpleLightbox('.gallery__area a', {
         showCounter: false,
         captions: false
     });
+    /************** Back to top button **************/
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1) {
+            $('#buttonTop').fadeIn();
+            $(".header").css({"position": "fixed", "opacity": "0.9"});
+            $(".header__logo img").css({"width": "150px"});
+        } else {
+            $('#buttonTop').fadeOut();
+            $(".header").css({"position": "relative", "opacity": "1"});
+            $(".header__logo img").css({"width": "200px"});
+        }
+    });
+
+    /************** Pop up **************/
+    $(".default-form").click( function() {
+        $(".bg").fadeIn(500);
+        $(".pop-up").fadeIn(500);
+    });
+    $(".question-form").click( function() {
+        $(".bg").fadeIn(500);
+        $(".pop-up-question").fadeIn(500);
+    });
+    $(".bg, .close").click( function() {
+        $(".bg").fadeOut(400);
+        $(".pop-up").fadeOut(400);
+        $(".pop-up-question").fadeOut(400);
+    });
+    
+    /************** Header mobile menu **************/
+    function openNav() {
+    document.getElementById("header__menu").style.width = "100%";
+    }
+    
+    function closeNav() {
+    document.getElementById("header__menu").style.width = "0%";
+    } 
 </script>
 
 </body>

@@ -1,11 +1,13 @@
 @font-face {
   font-family: Lato-Light;
   src: url(../fonts/Lato-Light.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Lato-Bold;
   src: url(../fonts/Lato-Bold.ttf);
+  font-display: swap;
 }
 
 * {
@@ -457,7 +459,7 @@ input:required, select:required, textarea:required {
 
 /*************************************** SCHEDULE ***/
 .schedule {
-  background: url("../images/content_bg.png");
+  background: url("../images/content_bg.jpg");
   position: relative;
 }
 
@@ -726,7 +728,7 @@ form .primary-button {
 
 /*************************************** BENEFITS ***/
 .benefits {
-  background: url("../images/content_bg.png");
+  background: url("../images/content_bg.jpg");
 }
 
 .benefits__all-items {
@@ -983,7 +985,7 @@ form .primary-button {
 
 /*************************************** GALLERY ***/
 .gallery {
-  background: url("../images/content_bg.png");
+  background: url("../images/content_bg.jpg");
 }
 
 .gallery__title {
