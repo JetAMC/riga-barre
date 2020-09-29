@@ -763,6 +763,30 @@ form {
     margin-right: 7px;
 }
 
+/*************************************** COPYRIGHT ***/
+
+.copyright {
+    background: #111;
+    color: #999;
+    font-size: 17px;
+    text-align: left;
+    .container {
+        padding: 15px 10px;
+    }
+    a {
+        color: #999;
+        text-decoration: none;
+    }
+}
+
+.copyright__container {
+    @include flexCenter(center, space-between);
+}
+
+.copyright__left-side, .copyright__center-side, .copyright__right-side {
+    width: 33%;
+}
+
 /*************************************** BUTTON TOP ***/
 
 #buttonTop {

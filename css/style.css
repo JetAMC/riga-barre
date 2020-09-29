@@ -1088,6 +1088,39 @@ form .primary-button {
   margin-right: 7px;
 }
 
+/*************************************** COPYRIGHT ***/
+.copyright {
+  background: #111;
+  color: #999;
+  font-size: 17px;
+  text-align: left;
+}
+
+.copyright .container {
+  padding: 15px 10px;
+}
+
+.copyright a {
+  color: #999;
+  text-decoration: none;
+}
+
+.copyright__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright__left-side, .copyright__center-side, .copyright__right-side {
+  width: 33%;
+}
+
 /*************************************** BUTTON TOP ***/
 #buttonTop {
   text-align: center;

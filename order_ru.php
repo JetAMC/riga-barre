@@ -127,6 +127,19 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page RU', $name . "\n" . $kod
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <div class="copyright__container container">
+            <div class="copyright__left-side">
+                <p>Riga Barre &copy; 2020</p>
+            </div>
+            <div class="copyright__center-side">
+                <a href="files/privatuma-politika.pdf" target="_blank">Политика конфиденциальности</a>
+            </div>
+            <div class="copyright__right-side">
+                <p>Дизайн и разработка - www.skyjet.lv</p>
+            </div>
+        </div>
+    </div>
     <!-- question pop up -->
 <div class="bg" style="display: none;">
 </div>

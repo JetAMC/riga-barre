@@ -65,6 +65,16 @@
     .footer__ask {
         width: 100%;
     }
+    .copyright__container {
+        flex-direction: column;
+    }
+    .copyright__left-side, .copyright__center-side {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .copyright__right-side {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 700px) {
