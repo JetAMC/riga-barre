@@ -136,7 +136,7 @@ mail('info@rigabarre.lv', 'Заявка с Landing Page LV', $name . "\n" . $kod
                 <a href="files/privatuma-politika.pdf" target="_blank">Политика конфиденциальности</a>
             </div>
             <div class="copyright__right-side">
-                <p>Дизайн и разработка - www.skyjet.lv</p>
+                <a href="http://skyjet.on.lv" target="_blank">Дизайн и разработка - www.skyjet.lv</a>
             </div>
         </div>
     </div>
